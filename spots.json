@@ -1,3 +1,4 @@
+
 [
   {
     "type": "image",
@@ -10,6 +11,5 @@
     "videoUrl": "https://www.youtube.com/watch?v=VIDEO_ID",
     "paragraph": "Description of the video",
     "title": "Spot 2"
-  },
-  // Add more spot objects as needed
+  }
 ]

@@ -22,3 +22,4 @@ fetch('spots.json')
   .catch(error => {
     console.log('Error loading spots:', error);
   });
+
