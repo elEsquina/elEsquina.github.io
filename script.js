@@ -1,25 +1,33 @@
-fetch('spots.json')
+fetch('portfolio.json')
   .then(response => response.json())
   .then(data => {
-    const spotContainer = document.getElementById('spot-container');
-    data.forEach(spot => {
-      const spotElement = document.createElement('div');
-      if (spot.type === 'image') {
+    const portfolioContainer = document.getElementById('portfolio-container');
+    data.forEach(entry => {
+      const entryElement = document.createElement('div');
+      entryElement.classList.add('portfolio-entry');
+
+      if (entry.type === 'image') {
         const imageElement = document.createElement('img');
-        imageElement.src = spot.imageUrl;
-        spotElement.appendChild(imageElement);
-      } else if (spot.type === 'video') {
+        imageElement.src = entry.url;
+        entryElement.appendChild(imageElement);
+      } else if (entry.type === 'video') {
         const videoElement = document.createElement('iframe');
-        videoElement.src = spot.videoUrl;
-        spotElement.appendChild(videoElement);
+        videoElement.src = entry.url;
+        videoElement.setAttribute('allowfullscreen', true);
+        entryElement.appendChild(videoElement);
       }
+
+      const titleElement = document.createElement('h2');
+      titleElement.textContent = entry.title;
+      entryElement.appendChild(titleElement);
+
       const paragraphElement = document.createElement('p');
-      paragraphElement.textContent = spot.paragraph;
-      spotElement.appendChild(paragraphElement);
-      spotContainer.appendChild(spotElement);
+      paragraphElement.textContent = entry.paragraph;
+      entryElement.appendChild(paragraphElement);
+
+      portfolioContainer.appendChild(entryElement);
     });
   })
   .catch(error => {
-    console.log('Error loading spots:', error);
+    console.log('Error loading portfolio:', error);
   });
-
