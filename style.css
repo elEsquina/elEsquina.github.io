@@ -1,13 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 20px;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
 }
 
 .portfolio-entry {
-  background-color: #fff;
+  background-color: #333333;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -32,6 +32,7 @@ h1 {
 .portfolio-entry h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .portfolio-entry p {
