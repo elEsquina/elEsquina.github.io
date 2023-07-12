@@ -1,0 +1,15 @@
+[
+  {
+    "type": "image",
+    "imageUrl": "path/to/image.jpg",
+    "paragraph": "Description of the image",
+    "title": "Spot 1"
+  },
+  {
+    "type": "video",
+    "videoUrl": "https://www.youtube.com/watch?v=VIDEO_ID",
+    "paragraph": "Description of the video",
+    "title": "Spot 2"
+  },
+  // Add more spot objects as needed
+]
