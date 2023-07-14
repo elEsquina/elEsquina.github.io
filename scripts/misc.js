@@ -1,5 +1,5 @@
 function getRandomDelay(){
-    return Math.floor(Math.random() * 5000);
+    return Math.floor( Math.random() * 10000 ) + 1000;
 }
 
 function generateClouds(){
@@ -7,7 +7,7 @@ function generateClouds(){
 
     setInterval(() => {
         
-        if (cloudContainer.childElementCount > 20) {
+        if (cloudContainer.childElementCount > 10) {
             return;
         }
 

@@ -6,7 +6,7 @@
 
     background-image: url("../assets/cloud1.png");
     animation: moveClouds linear infinite;
-    animation-duration: 20s;
+    animation-duration: 60s;
 }
 
 
@@ -18,5 +18,10 @@
 
     background-image: url("../assets/cloud2.png");
     animation: moveClouds linear infinite;
-    animation-duration: 20s;
+    animation-duration: 60s;
 }
+
+#cloud_container {
+    width: 90%;
+    height: 90%;
+ }
