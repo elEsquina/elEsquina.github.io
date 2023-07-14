@@ -1,0 +1,8 @@
+@keyframes moveClouds {
+  from {
+    left: -100px; /* Starting position */
+  }
+  to {
+    left: 100%; /* Ending position (right edge of the viewport) */
+  }
+}

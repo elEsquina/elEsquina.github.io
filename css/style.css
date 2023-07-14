@@ -1,0 +1,35 @@
+@import url("animations.css");
+@import url("misc.css");
+
+html {
+  height: 105%;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #38B0DE, #99D7EE);
+  color: #000000;
+  padding: 20px;
+}
+
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh; /* Set the parent's height to the full viewport height */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: #280303;
+  width: 200px;
+  height: 200px;
+
+}
