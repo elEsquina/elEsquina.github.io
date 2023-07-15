@@ -1,12 +1,17 @@
 let cloudInterval;
 const cloudContainer = document.getElementById("cloud_container");
+let cloudsGenerated = false;
 
 function getRandomDelay() {
   return Math.floor(Math.random() * 5000) + 1000;
 }
 
-
 function generateClouds() {
+  if (cloudsGenerated) {
+    return;
+  }
+  cloudsGenerated = true;
+
   cloudInterval = setInterval(() => {
     if (cloudContainer.childElementCount >= 15) {
       return;
@@ -17,10 +22,9 @@ function generateClouds() {
     cloud.style.top = Math.floor(Math.random() * 100) + "%";
 
     cloudContainer.appendChild(cloud);
-
   }, getRandomDelay());
-}
 
+}
 
 function stopClouds() {
   clearInterval(cloudInterval);
@@ -29,7 +33,9 @@ function stopClouds() {
   }
 }
 
+window.addEventListener('beforeunload', function() {
+  stopClouds();
+  cloudsGenerated = false;
+});
 
-window.addEventListener('beforeunload', function() {stopClouds(); });
 window.addEventListener("pageshow", generateClouds);
-
