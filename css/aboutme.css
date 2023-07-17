@@ -1,52 +1,43 @@
-
-/* MAIN MENU */
-
-.buttons-holder {
-    visibility: visible;
-    display: flex;
-
+#about-me {
     position: fixed;
     width: 400px;
     height: 225px;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    gap: 10%;
-
     transform: translate(-50%, -50%);
-    flex-direction: column;
-    align-items: center;
+    visibility: hidden;
     transition: opacity 1s ease;
+    opacity: 0;
 }
 
-  
-.button{
-        
+.text-container{
     font-family: 'PixelArtFont';
-    font-size: large;
+    font-size: medium;
 
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 30%;
-    padding: 2px 0px 2px 0px;
-
+  
+    padding: 6px 0px 0px 6px;
+  
     background-color: #79c908;;
-
+    
     border-top: 1px rgb(90, 208, 90);
     border-left: 1px rgb(90, 208, 90);
-
+  
     border-color: rgb(56, 180, 7);
     border-right: 4px solid #40ba04; 
     border-bottom: 10px solid #40ba04;
-
+  
     box-shadow:   -3px 0 0 0 rgb(255, 255, 255),
-                    3px 0 0 0 rgb(255, 255, 255),
-                    0 -3px 0 0 rgb(255, 255, 255),
-                    0 3px 0 0 rgb(255, 255, 255);
+                   3px 0 0 0 rgb(255, 255, 255),
+                   0 -3px 0 0 rgb(255, 255, 255),
+                   0 3px 0 0 rgb(255, 255, 255);
+
+}
+
+
+#about-me .button{
+    margin-top: 10px;
+    float: right;
 }
 

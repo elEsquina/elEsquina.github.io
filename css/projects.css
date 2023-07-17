@@ -1,0 +1,130 @@
+#container--projects {
+    position: fixed;
+
+    height: 500px;
+    width: 400px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: opacity 1s ease;
+    opacity: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.image--scroll{
+
+    height: 100%;
+    width: 100%;
+
+}
+  
+#container--projects .button {
+    
+    margin-top: 10px;
+
+    background-color: #e1ad6d; 
+    border-top: 1px solid #c99157; 
+    border-left: 1px solid #c99157;
+
+    border-color: #c99157; 
+    border-right: 4px solid #c99157;
+    border-bottom: 10px solid #c99157;
+
+}
+
+#container--projects iframe{
+    position: absolute;
+
+    width: 60%;
+    top: 50px;
+    left: 75px;
+    
+    border: 10px ridge #e99f00;
+
+}
+
+#container--projects .project--desc{
+    position: absolute;
+    
+    top: 220px;
+    left: 60px;
+
+    height: 40%;
+    
+    font-family: 'PixelArtFont';
+    font-size: smaller;
+
+    margin-left: 40px;
+    margin-right: 80px;
+
+}
+
+#container--projects h1{
+
+    position: absolute;
+    top: -43.5px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+
+}
+
+.arrow--left--projects {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    bottom: 8%;
+    left: 9%;
+
+    box-shadow:   -3px 0 0 0 rgb(255, 255, 255),
+                    3px 0 0 0 rgb(255, 255, 255),
+                    0 -3px 0 0 rgb(255, 255, 255),
+                    0 3px 0 0 rgb(255, 255, 255);
+}
+
+
+.arrow--right--projects {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    bottom: 8%;
+    right: 9%;
+    
+    box-shadow:   -3px 0 0 0 rgb(255, 255, 255),
+                    3px 0 0 0 rgb(255, 255, 255),
+                    0 -3px 0 0 rgb(255, 255, 255),
+                    0 3px 0 0 rgb(255, 255, 255);
+}
+
+
+#container--projects .page--count{
+    position: absolute;
+    font-family: 'PixelArtFont';
+    bottom: 4.5%;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

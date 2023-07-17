@@ -1,6 +1,8 @@
 @import url("animations.css");
 @import url("clouds.css");
 @import url("menu.css");
+@import url("projects.css");
+@import url("aboutme.css");
 
 @font-face {
   font-family: 'PixelArtFont';
@@ -10,6 +12,7 @@
 
 html {
   height: 100%;
+  overflow: hidden;
 }
 
 
@@ -24,9 +27,7 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 5%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255); 
   font-family: 'PixelArtFont';
 }
-
