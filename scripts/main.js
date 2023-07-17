@@ -23,7 +23,6 @@ async function main(){
 
   for (let i = 0; i < button_container.children.length; i++) {
     const child = button_container.children[i];
-    console.log(i);
 
     if (i!=0)
       child.addEventListener('click', () => {

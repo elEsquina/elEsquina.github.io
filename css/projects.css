@@ -19,7 +19,7 @@
 
 
 .image--scroll{
-
+    
     height: 100%;
     width: 100%;
 
@@ -111,20 +111,72 @@
 }
 
 
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
-/* @media (min-width: 768px) {} */
-
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+    #container--projects .page--count{
+        bottom: 4%;
+    }
 
-/* xl */
-/* @media (min-width: 1280px) {} */
+    #container--projects{
+        height: 600px;
+        width: 500px;
+    }
+
+    #container--projects .button {
+        font-size: large;
+    }
+
+    .arrow--right--projects {
+        bottom: 6.5%;
+    }
+
+    .arrow--left--projects {
+        bottom: 6.5%;
+    }
+
+    #container--projects .project--desc{
+        font-size: larger;
+        margin-top: 25px;
+        margin-left: 60px;
+        margin-right: 100px;
+    }
+
+    #container--projects iframe{
+        width: 58%;
+        top: 65px;
+        left: 100px;
+    }
+} 
+
 
 /* 2xl */
-/* @media (min-width: 1536px) {} */
+@media (min-width: 1440px) {
+    #container--projects .page--count{
+        bottom: 1.5%;
+        font-size: xx-large;
+    }
+
+    #container--projects{
+        height: 800px;
+        width: 700px;
+    }
+
+    #container--projects .button {
+        font-size: larger;
+        margin-top: 20px;
+    }
+
+    #container--projects .project--desc{
+        font-size: xx-large;
+        margin-top: 80px;
+        margin-left: 85px;
+        margin-right: 115px;
+    }
+
+    #container--projects iframe{
+        width: 58%;
+        height: 25%;
+        top: 80px;
+        left: 140px;
+    }
+} 

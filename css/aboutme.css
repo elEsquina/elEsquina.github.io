@@ -41,3 +41,62 @@
     float: right;
 }
 
+
+
+
+/* lg */
+@media (min-width: 1024px) {
+    #about-me{
+        width: 800px;
+        height: 450px;
+        top: 50%;
+    }
+
+    .text-container{
+        font-size: xx-large;
+
+        box-shadow:   -6px 0 0 0 rgb(255, 255, 255),
+                    6px 0 0 0 rgb(255, 255, 255),
+                   0 -6px 0 0 rgb(255, 255, 255),
+                   0 6px 0 0 rgb(255, 255, 255);
+    }
+
+    #about-me .button{
+        margin-top: 40px;
+        font-size: xx-large;
+
+        box-shadow:   -6px 0 0 0 rgb(255, 255, 255),
+                    6px 0 0 0 rgb(255, 255, 255),
+                   0 -6px 0 0 rgb(255, 255, 255),
+                   0 6px 0 0 rgb(255, 255, 255);
+    }
+} 
+
+
+/* 2xl */
+@media (min-width: 1440px) {
+    #about-me{
+        width: 1600px;
+        height: 900px;
+        top: 50%;
+    }
+
+    .text-container{
+        font-size: 4rem;
+        box-shadow:   -9px 0 0 0 rgb(255, 255, 255),
+                    9px 0 0 0 rgb(255, 255, 255),
+                   0 -9px 0 0 rgb(255, 255, 255),
+                   0 9px 0 0 rgb(255, 255, 255);
+    }
+
+    
+    #about-me .button{
+        margin-top: 30px;
+        font-size: 4rem;
+
+        box-shadow:   -9px 0 0 0 rgb(255, 255, 255),
+                    9px 0 0 0 rgb(255, 255, 255),
+                   0 -9px 0 0 rgb(255, 255, 255),
+                   0 9px 0 0 rgb(255, 255, 255);
+    }
+} 
