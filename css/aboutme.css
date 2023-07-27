@@ -73,30 +73,10 @@
 } 
 
 
-/* 2xl */
-@media (min-width: 1440px) {
-    #about-me{
-        width: 1600px;
-        height: 900px;
-        top: 50%;
-    }
+/*small*/
 
-    .text-container{
-        font-size: 4rem;
-        box-shadow:   -9px 0 0 0 rgb(255, 255, 255),
-                    9px 0 0 0 rgb(255, 255, 255),
-                   0 -9px 0 0 rgb(255, 255, 255),
-                   0 9px 0 0 rgb(255, 255, 255);
+@media (max-width: 400px){
+    #about-me {
+        width: 90%;
     }
-
-    
-    #about-me .button{
-        margin-top: 30px;
-        font-size: 4rem;
-
-        box-shadow:   -9px 0 0 0 rgb(255, 255, 255),
-                    9px 0 0 0 rgb(255, 255, 255),
-                   0 -9px 0 0 rgb(255, 255, 255),
-                   0 9px 0 0 rgb(255, 255, 255);
-    }
-} 
+}

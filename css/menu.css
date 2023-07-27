@@ -72,21 +72,3 @@
 } 
 
 
-/* 2xl */
-@media (min-width: 1440px) {
-    .buttons-holder{
-        width: 1600px;
-        height: 900px;
-        top: 50%;
-    }
-    .button{
-        font-size: 4rem;
-        box-shadow:  -9px 0 0 0 rgb(255, 255, 255),
-        9px 0 0 0 rgb(255, 255, 255),
-       0 -9px 0 0 rgb(255, 255, 255),
-       0 9px 0 0 rgb(255, 255, 255);
-    }
-    .buttons-holder h1{
-       font-size: 4.5rem;
-    }
-} 

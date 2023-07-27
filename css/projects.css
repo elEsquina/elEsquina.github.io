@@ -147,36 +147,3 @@
         left: 100px;
     }
 } 
-
-
-/* 2xl */
-@media (min-width: 1440px) {
-    #container--projects .page--count{
-        bottom: 1.5%;
-        font-size: xx-large;
-    }
-
-    #container--projects{
-        height: 800px;
-        width: 700px;
-    }
-
-    #container--projects .button {
-        font-size: larger;
-        margin-top: 20px;
-    }
-
-    #container--projects .project--desc{
-        font-size: xx-large;
-        margin-top: 80px;
-        margin-left: 85px;
-        margin-right: 115px;
-    }
-
-    #container--projects iframe{
-        width: 58%;
-        height: 25%;
-        top: 80px;
-        left: 140px;
-    }
-} 
