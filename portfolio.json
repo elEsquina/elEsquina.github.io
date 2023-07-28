@@ -1,12 +1,42 @@
 [
   {
-    "title": "Lorem ipsum",
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis blandit turpis cursus in hac habitasse platea dictumst.",
-    "url": "https://www.youtube.com/embed/D3h62rgewZM"
+    "title": "Project recommend",
+    "desc": "Creating a console app to simulate a Jaccard similarity video recommendation system using a custom-made dataset of videos and users.",
+    "url": "https://www.youtube.com/embed/vw68qSZSZG4"
   },
   {
-    "title": "Project 2",
-    "desc": "PROJECT EFIUQSEYUFHESYUFHSEFHYUSEFG UHYSEDUYFGSBEUYFGHSES OUI",
-    "url": "https://www.youtube.com/embed/dLDn_k8GmaU"
+    "title": "Custom language mapper",
+    "desc": "I have created a simple lexer to compile the 'darija' language into Python using a custom syntax. This lexer takes 'darija' code as input and transforms it into equivalent Python code.",
+    "url": "https://www.youtube.com/embed/iQ_XLGzWYoM"
+  },
+  {
+    "title": "Geoblox Dash",
+    "desc": "A game I developed with the help of @rogenus (3D modeler), where players collect orbs to gain speed and sell them for currency to buy other upgrades. The game has reached an impressive milestone of 1.7 Million visits.",
+    "url": "https://www.youtube.com/embed/-_um2wpUa60"
+  },
+  {
+    "title": "Food run",
+    "desc": "A game co-coded with @rogenus, where players race against their friends to achieve a healthy body. They must avoid junk food and engage in sports activities to transform from fat to fit. The game has achieved a remarkable milestone of 5 Million visits.",
+    "url": "https://www.youtube.com/embed/qMWvduz5SdM"
+  },
+  {
+    "title": "Pillar and moon abilities",
+    "desc": "This code was a product of a fun 4-hour challenge I participated in. The theme was 'pillars and moon', and I coded special abilities for the character.",
+    "url": "https://www.youtube.com/embed/jYegVJLcQXs"
+  }, 
+  {
+    "title": "Project space",
+    "desc": "Survive all the natural disasters that happen in space, on different planets, and with many friends. Unlock effects and make sure you stand alive even in the biggest storms. The game has hit 1.6 Million visits",
+    "url": "https://www.youtube.com/embed/59M4kCqOgF0"
+  },
+  {
+    "title": "Project mini roleplay",
+    "desc": "A simple test roleplay game that reached 693K visits",
+    "url": "https://www.youtube.com/embed/CKS75-WunVU"
+  },
+  {
+    "title": "Project ASYNC",
+    "desc": "A thrilling Discord bot where you collect money to buy runes, weapons & attack others. Respawning after defeat, but losing items. It has automoderation and manual moderation support and can be easily configured via a reaction-based menu. The bot has achieved a milestone of 12K servers and 100K users.",
+    "url": ""
   }
 ]
