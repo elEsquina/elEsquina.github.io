@@ -1,68 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./css/aboutme.css">
+    <link rel="stylesheet" href="./css/clouds.css">
 </head>
 
-  
 <body>
 
-  <div class = "buttons-holder" id="real_container">
-      <h1>Hello!</h1>
-      <div class = "button">About me</div>
-      <div class = "button">Projects</div>
-      <div class = "button">Behind you!</div>
-  </div>
-
-
-  <div id = "about-me">
-      <div class = "text-container">
-        I'm Othmane, a computer science student, and known as "@elesquina". As a computer scientist and technology enthusiast, my goal is to create immersive experiences while continuously improving my skills in programming and game design. My aim is to inspire and entertain people through my work.
-      </div>
-
-      <div class = "button" onclick="goToMenu()"> Return </div>
-  </div>
-
-
-  <div id = "container--projects"> 
-    
-    <h1 id="project_title">Lorem ipsum</h1>
-    
-    <img src = "assets/scroll1.png" class = "image--scroll">
-    
-    <iframe src="https://www.youtube.com/embed/D3h62rgewZM" frameborder="0" allowfullscreen id="project_video"></iframe>
-    
-    <p class="project--desc" id="project_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis blandit turpis cursus in hac habitasse platea dictumst.</p>
-    
-    <div class = "arrow--left--projects" onclick="left_project()">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
-      </svg>
+    <div id="menubtn" onclick="openheader();">
+        <img  class="menubtn" src="./assets/menu_bar.svg"><br>
     </div>
 
-    <div class = "arrow--right--projects" onclick="right_project()">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l6-6m0 0l-6-6m6 6H9a6 6 0 000 12h3" />
-      </svg>
+    <header id="header">
+        <div class="buttons">
+            <img onclick="returnHome();" src="../assets/pfp.svg">
+            <div onclick="returnHome();">Home</div>
+        </div>
+
+        <div class="links">
+            <a href="https://www.github.com/elEsquina"><img src="./assets/githublogo.svg"></a>
+            <a href="https://www.linkedin.com/in/othmane-azoubi-593814257"><img src="./assets/linkedinlogo.svg"></a>
+        </div>
+    </header>
+
+    <div id="middle">
+        <img class="pic">
+        <div class="right">
+            <h1>Hi! I am <br> Othmane,</h1>
+            <h3>Welcome to my Portfolio <br> website!</h3>
+            <div class="btnholder">
+                <div class="button" onclick="clickProjects();">Projects</div>
+                <div class="button" onclick="clickExperiences();">Experience</div>
+            </div>
+        </div>
     </div>
 
-    <p class="page--count" id="project_page_count">Page 0/0</p>
-    <div class = "button" onclick="goToMenu()"> Return </div>
+    <footer>
 
-  </div>
+    </footer>
     
+    <div id="cloud_container"></div>
 
-  <div id="cloud_container"></div>
-
-  <script src="scripts/main.js"></script>
-  <script src="scripts/clouds.js"></script>
-
+    <script src="scripts/aboutme.js"></script>
+    <script src="scripts/clouds.js"></script>
+    <script src="scripts/headerbar.js"></script>
 </body>
-  
+
 </html>

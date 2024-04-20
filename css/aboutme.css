@@ -1,82 +1,229 @@
-#about-me {
-    position: fixed;
-    width: 400px;
-    height: 225px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    visibility: hidden;
-    transition: opacity 1s ease;
-    opacity: 0;
+@import url("./headerbar.css");
+
+body{
+    margin: 0;
+    background-color: #47C9E3;
+    display: grid;
+    grid-template-rows: 100px calc(100vh - 140px) 40px;
+    grid-template-columns: 100vw;
+    height: 100vh;
+    grid-template-areas: "header" "middle" "footer";
+    overflow-x: hidden;
 }
 
-.text-container{
-    font-family: 'PixelArtFont';
-    font-size: medium;
+header{
+    grid-area: header;
+    background-color: #36B3D4;
+}
 
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  
-    padding: 6px 0px 0px 6px;
-  
-    background-color: #79c908;;
+#middle{
+    grid-area: middle;
+    position: relative;
+    height: 100%; 
+    width: 100%;
     
-    border-top: 1px rgb(90, 208, 90);
-    border-left: 1px rgb(90, 208, 90);
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+
+#middle h1{
+    color: #444;
+    font-family: 'PixelArtFont', 'Segoe UI';
+    font-size: 3.5rem;
+}
+
+#middle h3{
+    color: #444;
+    font-family: 'PixelArtFont', 'Segoe UI';
+    font-size: 2.5rem;
+}
+
+.pic{
+    width: 500px;
+    height: 500px;
+
+    border-width: 20px;
+    border-radius: 100%;
+    border-color: #F8C510;
+    background-color: #F7F4CB;
+    border-style: solid;
+}
+
+.btnholder {
+    display: flex;
+    gap: 40px
+}
+
+.button {
+    font-size: 2rem;
+    padding: 10px 25px 10px  25px;
+
+    text-align: center;
+    text-justify: center;
+    font-family: 'ebrimabold', 'Segoe UI';
+    color: white;
+
+    background-color: #79c908;;
+    border-top: 3px rgb(90, 208, 90);
+    border-left: 3px rgb(90, 208, 90);
     border-color: rgb(56, 180, 7);
-    border-right: 4px solid #40ba04; 
+    border-right: 6px solid #40ba04; 
     border-bottom: 10px solid #40ba04;
-  
-    box-shadow:   -3px 0 0 0 rgb(255, 255, 255),
-                   3px 0 0 0 rgb(255, 255, 255),
-                   0 -3px 0 0 rgb(255, 255, 255),
-                   0 3px 0 0 rgb(255, 255, 255);
+    box-shadow:   -5px 0 0 0 rgb(255, 255, 255),
+                    5px 0 0 0 rgb(255, 255, 255),
+                    0 -5px 0 0 rgb(255, 255, 255),
+                    0 5px 0 0 rgb(255, 255, 255);
+}
 
+footer {
+    grid-area: footer;
+    height: 100%;
+    width: 100%;
+    background-color: #52BD80;
 }
 
 
-#about-me .button{
-    margin-top: 10px;
-    float: right;
-}
-
-
-
-
-/* lg */
-@media (min-width: 1024px) {
-    #about-me{
-        width: 800px;
-        height: 450px;
-        top: 50%;
+@media (max-width: 1500px) {
+    body{
+        grid-template-rows: 80px calc(100vh - 110px) 30px;
     }
-
-    .text-container{
-        font-size: xx-large;
-
-        box-shadow:   -6px 0 0 0 rgb(255, 255, 255),
-                    6px 0 0 0 rgb(255, 255, 255),
-                   0 -6px 0 0 rgb(255, 255, 255),
-                   0 6px 0 0 rgb(255, 255, 255);
+    #middle{
+        gap: 100px
     }
-
-    #about-me .button{
-        margin-top: 40px;
-        font-size: xx-large;
-
-        box-shadow:   -6px 0 0 0 rgb(255, 255, 255),
-                    6px 0 0 0 rgb(255, 255, 255),
-                   0 -6px 0 0 rgb(255, 255, 255),
-                   0 6px 0 0 rgb(255, 255, 255);
+    #middle h1{
+        font-size: 2.5rem;
+    }
+    #middle h3{
+        font-size: 1.5rem;
+    }
+    .pic{
+        width: 300px;
+        height: 300px;
+        border-width: 20px;
+    }
+    .button {
+        font-size: 1.2rem;
     }
 } 
 
-
-/*small*/
-
-@media (max-width: 400px){
-    #about-me {
-        width: 90%;
+@media (max-width: 900px) {
+    body{
+        grid-template-rows: 70px calc(100vh - 90px) 20px;
     }
+    #middle{
+        gap: 75px;
+    }
+    #middle h1{
+        font-size: 2rem;
+    }
+    #middle h3{
+        font-size: 1rem;
+    }
+    .pic{
+        width: 250px;
+        height: 250px;
+        border-width: 15px;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 5px 15px 5px  15px;
+    
+        background-color: #79c908;;
+        border-top: 1px rgb(90, 208, 90);
+        border-left: 1px rgb(90, 208, 90);
+        border-color: rgb(56, 180, 7);
+        border-right: 4px solid #40ba04; 
+        border-bottom: 10px solid #40ba04;
+        box-shadow:   -3px 0 0 0 rgb(255, 255, 255),
+                        3px 0 0 0 rgb(255, 255, 255),
+                        0 -3px 0 0 rgb(255, 255, 255),
+                        0 3px 0 0 rgb(255, 255, 255);
+    }
+} 
+
+@media (max-height: 500px) {
+    .pic{
+        width: 200px;
+        height: 200px;
+        border-width: 15px;
+    }
+    #middle h1{
+        font-size: 1.5rem;
+    }
+    #middle h3{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body{
+        grid-template-columns: 100vw;
+        grid-template-rows: 100vh;
+        grid-template-areas: "middle"
+    }
+    .pic{
+        display: none;
+    }
+
+    .btnholder{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .button{
+        font-size: 1.5rem;
+        padding: 5px 5px 5px 5px;
+        width: 120px;
+        margin: auto;
+    }
+
+    #middle h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    #middle h3{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    footer{
+        display: none;
+    }
+} 
+
+@media (max-width: 400px) {
+    .button{
+        font-size: 1rem;
+        padding: 5px 5px 5px 5px;
+        width: 100px;
+        margin: auto;
+    }
+
+    #middle h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    #middle h3{
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #517e32;
+    border-color: #3d601f;
+}
+  
+  
+.button:active {
+    transform: scale(0.9);
+    background-color: #3d601f;
+    border-color: #517e32;
+    transition-duration: 0.2s;
 }

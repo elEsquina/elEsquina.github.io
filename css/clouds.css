@@ -24,4 +24,14 @@
 #cloud_container {
     width: 90%;
     height: 90%;
- }
+}
+
+@keyframes moveClouds {
+    from {
+      left: -100px;
+    }
+    to {
+      left: 100%; 
+    }
+  }
+  
