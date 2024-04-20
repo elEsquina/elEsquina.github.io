@@ -87,7 +87,7 @@ footer {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
     body{
         grid-template-rows: 80px calc(100vh - 110px) 30px;
     }
