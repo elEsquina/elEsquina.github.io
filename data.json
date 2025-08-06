@@ -1,0 +1,274 @@
+{
+    "projects": [
+        {
+            "title": "Online Bookstore",
+            "description": "This project implements a RESTful API for an online bookstore to manage books, authors, and sales reports. Features include: Authentication using UUID Bearer tokens. Book Management to add, update, retrieve, and delete books with filtering by title, author, or genre. Author Management to add, update, retrieve, and delete authors. Sales Reporting to generate daily sales reports with total revenue and top-selling books, saved as JSON files. Middlewares for token-based authentication, request logging, and context-based database access. Scalability with PostgreSQL, layered design, and graceful shutdown. Technologies Used: Go for the backend and PostgreSQL for data storage. ",
+            "github": "https://github.com/elEsquina/GoingBookingStoring",
+            "link": "",
+            "video": "",
+            "date": "February 2025"
+        },
+        {
+            "title": "WoahACPU",
+            "description": "WoahACPU is a process scheduling simulator developed for the Operating Systems course, visualizing how processes are selected by different scheduling algorithms. <br> Features include: Unity-based simulation built with Unity 2021.3.22f1, supporting cross-platform deployment (Android, Windows). Python backend to benchmark and serve process information, either randomly generated or loaded from Server/processes.json. ",
+            "github": "https://github.com/elEsquina/WoahACPU",
+            "link": "",
+            "video": "https://youtube.com/embed/BzcBxdipPPo",
+            "date": "February 2025"
+        },
+        {
+            "title": "Symbolic Control for Nonlinear Systems",
+            "description": "This project implements symbolic abstraction and control for nonlinear systems.<br> Features include: Symbolic abstraction of nonlinear systems. Synthesis of controllers for safety, reachability, and other specifications. Integration with system dynamics and parameters.",
+            "github": "https://github.com/elEsquina/Symbolic-Control-For-Non-Linear-Systems",
+            "link": "",
+            "video": "",
+            "date": "December 2024"
+        },
+        {
+            "title": "COOL Compiler",
+            "description": "This project is a complete compiler for the Classroom Object-Oriented Language (COOL), implemented in Go. Features include: Full implementation of COOL language features like classes, inheritance, methods, and control structures. Robust lexical and syntax analysis with recursive descent and Pratt parsing. Semantic analysis for type checking and symbol table construction. LLVM IR generation with optimizations like constant propagation and dead code elimination. Support for importing modules and modular program organization. <br> Setup: Requires Go 1.23.4, LLVM toolchain, and Make. Clone the repository and run 'make all I=pathtocoolfile' to build and compile a COOL program.",
+            "github": "https://github.com/elEsquina/Go-Cool-Compiler",
+            "link": "",
+            "video": "",
+            "date": "October 2024"
+        },
+        {
+            "title": "Faceless channel AI video generator",
+            "description": "A tool that makes creating faceless social media videos easier than ever. It automatically grabs interesting posts from Reddit, turns them into natural-sounding speech, and perfectly syncs the audio with visuals. Then, it edits the video to match the slick, eye-catching style of Instagram’s 2022 trends. No complicated setups or tech skills needed—just plug in your content and get a ready-to-share video that stands out on any platform. This tool takes the hassle out of video creation so you can focus on sharing great stories.",
+            "github": "https://github.com/elEsquina/Faceless-channel-AI-video-generator",
+            "video": "https://youtube.com/embed/tojrvi5qrmA",
+            "date": "August 2024"
+        },
+        {
+            "title": "Hamming code error correxion using RISC V assembly",
+            "description": "In this project, I focused on developing a Hamming code algorithm using RISC-V assembly language. My goal was to implement error detection and correction techniques, specifically targeting single-bit errors in data transmission. The project involved writing assembly code to generate the Hamming code, as well as verifying and correcting errors in received data. Through this implementation, I gained a deeper understanding of low-level programming, the structure of RISC-V assembly, and how error-correcting codes function to ensure data integrity in communication systems.",
+            "github": "https://github.com/elEsquina/Error-Correction-Hamming-Code/tree/main",
+            "link": "",
+            "video": "",
+            "date": "May 2024"
+        },
+        {
+            "title": "Airnest",
+            "description": "Welcome to our Flight Booking System! This platform streamlines the flight booking process, providing users with a convenient and user-friendly experience. The system includes secure transactions, comprehensive database management, and efficient installation procedures. This is a database management course final project.",
+            "link": "",
+            "video": "https://www.youtube.com/embed/TzYWaekTWJo",
+            "date": "November 2023"
+        },
+        {
+            "title": "Traffic Simulation and Modeling",
+            "description": "We developed a project to address the issues that some of our metropolises, were facing. We decided to look into the fields of traffic management in view of the major issues of traffic jams, accidents on the road, and poor road design. The primary goal of this project is to use Unity to develop a robust traffic simulation platform which focuses on realistic vehicle interactions, real-world road layouts, and the application of traffic laws.",
+            "github": "https://github.com/SafaeHaj/TrafficSimulator",
+            "link": "",
+            "video": "https://www.youtube.com/embed/Q5AumJFbLNg",
+            "date": "November 2023"
+        },
+        {
+            "title": "R2D2 Robot",
+            "description": "I have participated in the 2024th edition of the National Robotics Competition hosted annually by the EMINES E-tech club. My team and I developed within the 24-hour hackathon, an R2-D2 like robot, inspired by the Star Wars series. The robot had full rotational mobility, Bluetooth controls, ultrasound captors for obstacle detection, and a buzzer to signal close objects.",
+            "link": "",
+            "video": "https://www.youtube.com/embed/tHyjZYvIu2g",
+            "date": "March 2024"
+        },
+        {
+            "title": "Geoblox Dash",
+            "description": "Collaborated with 3D modeler @rogenus to develop an engaging game. Players collect orbs to enhance speed and trade them for in-game currency to purchase upgrades. Achieved a significant milestone of 1.7 million visits.",
+            "link": "",
+            "video": "https://www.youtube.com/embed/-_um2wpUa60",
+            "date": "August 2021"
+        },
+        {
+            "title": "Jacard recommendation system",
+            "description": "Developed a console application that simulates a Jaccard similarity-based video recommendation system. Utilized a custom dataset of videos and users to enhance algorithmic accuracy.",
+            "link": "",
+            "video": "https://www.youtube.com/embed/vw68qSZSZG4",
+            "date": "June 2023"
+        },
+        {
+            "title": "Custom Language Mapper",
+            "description": "Designed a lexer to compile 'Darija' language code into Python using a proprietary syntax. Transformed 'Darija' scripts into equivalent Python code for seamless integration.",
+            "link": "",
+            "video": "https://www.youtube.com/embed/iQ_XLGzWYoM",
+            "date": "December 2022"
+        },
+        {
+            "title": "Space disasters",
+            "description": "Designed a survival game set in space where players navigate natural disasters across various planets. Unlocked special effects and survived extreme conditions. Accumulated 1.6 million visits.",
+            "link": "",
+            "video": "https://www.youtube.com/embed/59M4kCqOgF0",
+            "date": "April 2020"
+        },
+        {
+            "title": "Food Run",
+            "description": "Co-authored a game with @rogenus focused on health and fitness. Players race to maintain a healthy physique by avoiding junk food and participating in sports activities. Surpassed 5 million visits.",
+            "link": "",
+            "video": "https://www.youtube.com/embed/qMWvduz5SdM",
+            "date": "April 2022"
+        },
+        {
+            "title": "Pillar and Moon Abilities game prototype",
+            "description": "Participated in a 4-hour coding challenge themed 'pillars and moon'. Developed specialized character abilities within the given timeframe.",
+            "link": "",
+            "video": "https://www.youtube.com/embed/jYegVJLcQXs",
+            "date": "July 2022"
+        },
+        {
+            "title": "Mini Roleplay game",
+            "description": "Created a test roleplay game that garnered 693K visits, demonstrating initial success and engagement.",
+            "link": "",
+            "video": "https://www.youtube.com/embed/CKS75-WunVU",
+            "date": "February 2021"
+        },
+        {
+            "title": "ASYNC automod",
+            "link": "",
+            "description": "Developed an interactive Discord bot featuring currency collection, weapon acquisition, and attack mechanics. Included both auto-moderation and manual moderation support, with an intuitive, reaction-based configuration menu. Reached a milestone of 12,000 servers and 100,000 users. Although it's an older and more basic project, I keep it in my portfolio because it was one of my first large-scale achievements and an important milestone at that stage in my learning journey.",
+            "video": "",
+            "date": "December 2019"
+        }
+    ],
+    "experiences": [
+        {
+            "title": "Blockchain Engineer Intern",
+            "company": "UM6P College Of Computing + OCP Group",
+            "date": "June 2025 - August 2025",
+            "description": "Developed a Blockchain-Enabled IoT ecosystem for the phosphate supply chain, supporting OCP Group's digital transformation goals. Utilized Hyperledger Fabric for secure, auditable transactions, Fabric CA for identity management, and CouchDB for JSON-based data storage. Deployed on Toubkal, Africa's most powerful supercomputer, using Apptainer for containerization and Slurm for task orchestration. Built backend with Node.js/Express.js for REST APIs and frontend with Next.js for role-based interfaces, improving transparency, traceability, and cybersecurity in Morocco's phosphate industry.",
+            "link": ""
+        },
+        {
+            "title": "Data science Engineer",
+            "company": "Upfund",
+            "date": "February 2025 - May 2025",
+            "description": "Created an AI Voice Agent for Building Information on Command for Upfund, enabling real estate professionals to access building data via voice requests on WhatsApp. Built a backend system and message processing pipeline using Retrieval-Augmented Generation technic (RAG), and FastAPI. Vectorized data and stored it in DuckDB, ensuring reliable data handling with a Pydantic-based validation pipeline. Designed a modular, scalable system to deliver accurate, real-time building information.",
+            "link": ""
+        },
+
+        {
+            "title": "Software Engineering Intern",
+            "company": "Ministry of Agriculture, Maritime Fisheries, Rural Development, and Water and Forests, Rabat",
+            "date": "July 2024 - August 2024",
+            "description": "Developed a platform for supervisors to manage intern projects, including task creation, event planning, and progress tracking. Implemented security measures to protect the backend using Java Spring Boot, PG Admin, and PostgreSQL DBMS.",
+            "link": ""
+        },
+        {
+            "title": "Research Competitions",
+            "company": "Youth Research Forum, Qatar University",
+            "date": "2023 - 2024",
+            "description": "Securing LoRaWAN IoT Systems for Health Data Protection: Submitted a research paper to the 7th Youth Research Forum (YRF) 2024 (Qatar University) and the 2025 8th IEEE CiSt Congress. The paper focuses on security enhancements for LoRaWAN-based IoT infrastructures to protect sensitive health data against emerging cyber threats.<br>Critical Digital Literacy in the MENA Region: Submitted a research paper to the 6th YRF 2024 on improving stochastic reputation systems to combat fake news and enhance social media security.",
+            "link": ""
+        },
+        {
+            "title": "Forgebots UM6P Chair",
+            "company": "UM6P SOLE",
+            "date": "September  2024 - June 2026",
+            "description": "Contributed to the Forgebots UM6P Student club, focusing on advancing robotics and automation initiatives through collaborative projects, research and workshop at UM6P.",
+            "link": ""
+        },
+        {
+            "title": "ACM UM6P Chapter",
+            "company": "UM6P College Of Computing + UM6P SOLE",
+            "date": "September 2024 - June 2026",
+            "description": "Served as Vice-Chair (Sep 2024 - Jun 2025) and Cybersecurity/CTF Track Lead (Sep 2025 - Jun 2026) for the ACM UM6P Chapter. Organized events (MNPC 2023 / MCPC 2025) and led cybersecurity teams.",
+            "link": ""
+        }
+    ],
+    "certificates": [
+        {
+            "title": "LDC (Local Domotics Competition) First Prize",
+            "issuer": "UM6P SAP+D + UM6P SOLE",
+            "date": "February 2025",
+            "image": "https://via.placeholder.com/300x200?text=LDC+First+Prize",
+            "link": ""
+        },
+        {
+            "title": "HTB International 42 The Network Meetup",
+            "issuer": "Hack The Box + 1337 EliteSec",
+            "date": "May 2025",
+            "image": "https://via.placeholder.com/300x200?text=HTB+Network+Meetup",
+            "link": ""
+        },
+        {
+            "title": "Winter School on Next-Generation AI and Economic Applications",
+            "issuer": "OCP Group, EMINES UM6P, L'X Polytechnique",
+            "date": "2025",
+            "image": "https://via.placeholder.com/300x200?text=Winter+School+AI",
+            "link": ""
+        },
+        {
+            "title": "IBM SkillsBuild Data Fundamentals",
+            "issuer": "IBM",
+            "date": "2024",
+            "image": "https://via.placeholder.com/300x200?text=IBM+Data+Fundamentals",
+            "link": ""
+        },
+        {
+            "title": "IBM SkillsBuild Cybersecurity Fundamentals",
+            "issuer": "IBM",
+            "date": "2024",
+            "image": "https://via.placeholder.com/300x200?text=IBM+Cybersecurity+Fundamentals",
+            "link": ""
+        },
+    {
+            "title": "UM6P MDA Cybersecurity Course",
+            "issuer": "UM6P + Morocco Digital Academy",
+            "date": "2024",
+            "image": "https://via.placeholder.com/300x200?text=UM6P+MDA+Cybersecurity",
+            "link": ""
+        },
+        {
+            "title": "ISC2 Security Principles",
+            "issuer": "ISC2",
+            "date": "2024",
+            "image": "https://via.placeholder.com/300x200?text=ISC2+Security+Principles",
+            "link": ""
+        },
+        {
+            "title": "NYU Cyber Attack Countermeasures",
+            "issuer": "New York Tandon University + Coursera",
+            "date": "2024",
+            "image": "https://via.placeholder.com/300x200?text=NYU+Cyber+Attack+Countermeasures",
+            "link": ""
+        },
+        {
+            "title": "NYU Real-Time Cyber Threat Detection and Mitigation",
+            "issuer": "New York Tandon University + Coursera",
+            "date": "2024",
+            "image": "https://via.placeholder.com/300x200?text=NYU+Cyber+Threat+Detection",
+            "link": ""
+        },
+        {
+            "title": "NYU Enterprise and Infrastructure Security",
+            "issuer": "New York Tandon University + Coursera",
+            "date": "2024",
+            "image": "https://via.placeholder.com/300x200?text=NYU+Enterprise+Security",
+            "link": ""
+        },
+        {
+            "title": "URC and NRC (University and National Robotics Competition)",
+            "issuer": "UM6P EMINES + UM6P SOLE",
+            "date": "2025",
+            "image": "https://via.placeholder.com/300x200?text=URC+NRC+2025",
+            "link": ""
+        },
+        {
+            "title": "URC and NRC (University and National Robotics Competition)",
+            "issuer": "UM6P EMINES + UM6P SOLE",
+            "date": "2024",
+            "image": "https://via.placeholder.com/300x200?text=URC+NRC+2023",
+            "link": ""
+        },
+        {
+            "title": "URC and NRC (University and National Robotics Competition)",
+            "issuer": "UM6P EMINES + UM6P SOLE",
+            "date": "2023",
+            "image": "https://via.placeholder.com/300x200?text=URC+NRC+2022",
+            "link": ""
+        },
+        {
+            "title": "National Sailing Competitions",
+            "issuer": "Federation Royale Marocaine de Voile",
+            "date": "2022",
+            "image": "https://via.placeholder.com/300x200?text=National+Sailing+2022",
+            "link": ""
+        }
+    ]
+}

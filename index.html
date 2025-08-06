@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Othmane's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Serif', serif;
+            background: #000000; /* Solid black background */
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        #particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            filter: blur(1px); /* Glow effect for particles */
+        }
+
+        nav {
+            background: rgba(30, 30, 30, 0.9); /* Slightly lighter, semi-transparent gray */
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 2;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: calc(1rem + 0.5vw); /* Larger on wider screens */
+            font-family: 'Noto Serif', serif;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #800080; /* Purple hover effect */
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: calc(1.4rem + 0.4vw); /* Adjusted for mobile */
+            margin-left: 0.8rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #800080; /* Purple hover effect */
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 80px auto 20px;
+            padding: 20px;
+            text-align: left; /* Left-align all content */
+            z-index: 1;
+            position: relative;
+        }
+
+        .home-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Keep home text centered */
+            justify-content: center;
+            min-height: calc(100vh - 100px); /* Full viewport height minus nav */
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        h1 {
+            font-size: calc(2rem + 1vw); /* Larger on wider screens */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+            font-family: 'Noto Serif', serif;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: calc(1.6rem + 0.5vw); /* Larger for section headings */
+            margin: 20px 0 10px;
+            font-family: 'Noto Serif', serif;
+        }
+
+        p {
+            font-size: calc(1rem + 0.3vw); /* Slightly larger text */
+            margin: 10px 0;
+            line-height: 1.6;
+            font-family: 'Noto Serif', serif;
+        }
+
+        .home-text p:last-child {
+            font-size: calc(1.2rem + 0.4vw); /* Larger for emphasis */
+            font-weight: bold;
+            margin-top: 20px;
+            color: #00b7ff; /* Blue for emphasis */
+            transition: color 0.3s;
+        }
+
+        .home-text p:last-child:hover {
+            color: #800080; /* Purple hover effect */
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Max 2 columns */
+            gap: 30px; /* Increased gap for less crowding */
+            margin-top: 20px;
+        }
+
+        .experience-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px; /* Increased gap */
+            margin-top: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 25px; /* More padding for breathing room */
+            transition: transform 0.3s;
+            min-height: 450px; /* Slightly taller cards */
+            text-align: left; /* Left-align card content */
+        }
+
+        .experience-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 25px; /* More padding */
+            transition: transform 0.3s;
+            width: calc(100% - 40px); /* Full width minus padding for aesthetics */
+            text-align: left; /* Left-align card content */
+        }
+
+        .card:hover, .experience-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3, .experience-card h3 {
+            margin: 0 0 10px;
+            font-size: calc(1.3rem + 0.3vw); /* Larger title */
+            font-family: 'Noto Serif', serif;
+            display: flex;
+            justify-content: flex-start; /* Left-align title and icons */
+            gap: 10px;
+        }
+
+        .card h3 a, .experience-card h3 a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: calc(1.4rem + 0.4vw); /* Larger icons */
+            transition: color 0.3s;
+        }
+
+        .card h3 a:hover, .experience-card h3 a:hover {
+            color: #00b7ff;
+        }
+
+        .card p, .experience-card p {
+            margin: 0 0 10px;
+            font-size: calc(1rem + 0.2vw); /* Larger body text */
+            line-height: 1.5;
+            font-family: 'Noto Serif', serif;
+        }
+
+        .card a:not(.icon), .experience-card a:not(.icon) {
+            color: #00b7ff;
+            text-decoration: none;
+        }
+
+        .card a:not(.icon):hover, .experience-card a:not(.icon):hover {
+            text-decoration: underline;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            margin: 10px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .certificate-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+
+            .nav-links {
+                margin-bottom: 0.5rem;
+            }
+
+            .nav-links a {
+                margin: 0 0.8rem;
+                font-size: calc(0.9rem + 0.5vw);
+            }
+
+            .social-links a {
+                font-size: calc(1.2rem + 0.4vw);
+                margin-left: 0.5rem;
+            }
+
+            .content {
+                margin: 60px auto 10px;
+                padding: 10px;
+                text-align: left; /* Maintain left alignment on mobile */
+            }
+
+            .home-text {
+                min-height: calc(100vh - 80px); /* Adjust for smaller nav */
+            }
+
+            h1 {
+                font-size: calc(1.8rem + 1vw);
+            }
+
+            h2 {
+                font-size: calc(1.4rem + 0.5vw);
+            }
+
+            p {
+                font-size: calc(0.9rem + 0.3vw);
+            }
+
+            .home-text p:last-child {
+                font-size: calc(1rem + 0.4vw);
+            }
+
+            .grid {
+                grid-template-columns: 1fr; /* Single column on mobile */
+            }
+
+            .experience-grid {
+                gap: 20px; /* Slightly smaller gap on mobile */
+            }
+
+            .card, .experience-card {
+                min-height: 300px; /* Shorter cards on mobile */
+                padding: 15px;
+                text-align: left; /* Maintain left alignment on mobile */
+            }
+
+            .experience-card {
+                width: calc(100% - 20px); /* Adjust padding for mobile */
+            }
+
+            .card h3, .experience-card h3 {
+                font-size: calc(1.1rem + 0.3vw);
+                justify-content: flex-start; /* Maintain left alignment on mobile */
+            }
+
+            .card p, .experience-card p {
+                font-size: calc(0.9rem + 0.2vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    <nav>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#experiences-certifications">Experiences</a>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/elEsquina" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/othmane-azoubi-593814257" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </nav>
+    <div class="content" id="content">
+        <div class="home-text" id="home">
+            <h1>Hi! I am Othmane,</h1>
+            <p>I merge cybersecurity, IoT, AI, and embedded systems into innovative projects.</p>
+            <p>Come in</p>
+        </div>
+    </div>
+
+    <script>
+        // Particle effect
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const particlesArray = [];
+        const numberOfParticles = 100;
+        const trailLength = 10; // Number of trail points
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1.5; // Base size
+                this.baseSize = this.size; // Store original size
+                this.speedX = Math.random() * 0.4 - 0.2;
+                this.speedY = Math.random() * 0.4 - 0.2;
+                this.brightness = Math.random() * 0.5 + 0.5; // Base brightness
+                this.baseBrightness = this.brightness; // Store original brightness
+                this.isActive = false; // Track activation state
+                this.activeTimer = 0; // Timer for activation duration
+                this.trail = []; // Store trail positions
+            }
+
+            update() {
+                if (this.isActive) {
+                    // Update trail
+                    this.trail.push({ x: this.x, y: this.y, brightness: this.brightness });
+                    if (this.trail.length > trailLength) {
+                        this.trail.shift();
+                    }
+                    // Check timer
+                    this.activeTimer -= 16.67; // Approx. 60fps (1000ms / 60)
+                    if (this.activeTimer <= 0) {
+                        this.isActive = false;
+                        this.size = this.baseSize;
+                        this.brightness = this.baseBrightness;
+                        this.trail = []; // Clear trail
+                    }
+                } else {
+                    // Normal movement
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+                    if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                    if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+                    this.trail = []; // Clear trail when not active
+                }
+            }
+
+            draw() {
+                // Draw trail
+                for (let i = 0; i < this.trail.length; i++) {
+                    const trailPoint = this.trail[i];
+                    const trailBrightness = this.brightness * (i + 1) / this.trail.length;
+                    ctx.fillStyle = `rgba(255, 255, 255, ${trailBrightness * 0.5})`;
+                    ctx.beginPath();
+                    ctx.arc(trailPoint.x, trailPoint.y, this.size * (i + 1) / this.trail.length, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+                // Draw main particle
+                ctx.fillStyle = `rgba(255, 255, 255, ${this.brightness})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            activate() {
+                this.isActive = true;
+                this.size = this.baseSize * 2; // Double size when active
+                this.brightness = 1; // Max brightness when active
+                this.activeTimer = 500; // Active for 500ms
+                this.trail = []; // Clear trail on activation
+            }
+        }
+
+        function init() {
+            for (let i = 0; i < numberOfParticles; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+                particlesArray[i].draw();
+            }
+            requestAnimationFrame(animate);
+        }
+
+        // Activate a random particle every 2 seconds
+        function activateRandomParticle() {
+            const randomIndex = Math.floor(Math.random() * particlesArray.length);
+            particlesArray[randomIndex].activate();
+        }
+
+        init();
+        animate();
+        setInterval(activateRandomParticle, 2000); // Activate every 2 seconds
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Dynamic content rendering
+        async function loadContent() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                const contentDiv = document.getElementById('content');
+
+                function renderHome() {
+                    contentDiv.innerHTML = `
+                        <div class="home-text" id="home">
+                            <h1>Hi! I am Othmane,</h1>
+                            <p>I merge cybersecurity, IoT, AI, and embedded systems into innovative projects.</p>
+                            <p>Come in</p>
+                        </div>
+                    `;
+                }
+
+                function renderProjects() {
+                    let html = '<h1>My Projects</h1><div id="projects" class="grid">';
+                    data.projects.forEach(project => {
+                        html += `
+                            <div class="card">
+                                <h3>
+                                    ${project.title}
+                                 </h3>
+                                <p>${project.date}</p>
+                                ${project.video ? `
+                                    <div class="video-container">
+                                        <iframe src="${project.video}" title="${project.title} video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                ` : ''}
+                                <div>${project.description}</div>
+                                ${project.github ? `
+                                    <p><a href="${project.github}" target="_blank">View Source Code</a></p>
+                                ` : ''}
+                                ${project.link ? `
+                                    <p><a href="${project.link}" target="_blank">View Project</a></p>
+                                ` : ''}
+                            </div>
+                        `;
+                    });
+                    html += '</div>';
+                    contentDiv.innerHTML = html;
+                }
+
+                function renderExperiencesAndCertifications() {
+                    let html = '<h1>Professional Experiences and Certifications</h1><div id="experiences-certifications">';
+                    
+                    // Professional Experiences Section
+                    html += '<h2>Professional Experiences</h2><div class="experience-grid">';
+                    if (data.experiences && data.experiences.length > 0) {
+                        data.experiences.forEach(exp => {
+                            html += `
+                                <div class="experience-card">
+                                    <h3>
+                                        ${exp.title}
+                                     </h3>
+                                    <p><strong>Company:</strong> ${exp.company}</p>
+                                    <p><strong>Date:</strong> ${exp.date}</p>
+                                    <p>${exp.description}</p>
+                                    ${exp.link ? `
+                                        <p><a href="${exp.link}" target="_blank">View Details</a></p>
+                                    ` : ''}
+                                </div>
+                            `;
+                        });
+                    } else {
+                        html += '<p>No professional experiences available at this time.</p>';
+                    }
+                    html += '</div>';
+
+                    // Certifications Section
+                    html += '<h2>Certifications</h2><div class="grid">';
+                    if (data.certificates && data.certificates.length > 0) {
+                        data.certificates.forEach(cert => {
+                            html += `
+                                <div class="card">
+                                    <h3>
+                                        ${cert.title}
+                                    
+                                    </h3>
+                                    <p><strong>Issued by:</strong> ${cert.issuer}</p>
+                                    <p><strong>Date:</strong> ${cert.date}</p>
+                                    ${cert.image ? `
+                                        <img src="${cert.image}" alt="${cert.title}" class="certificate-image">
+                                    ` : '<p>No certificate image available.</p>'}
+                                </div>
+                            `;
+                        });
+                    } else {
+                        html += '<p>No certifications available at this time.</p>';
+                    }
+                    html += '</div>';
+
+                    contentDiv.innerHTML = html;
+                }
+
+                // Handle navigation
+                window.addEventListener('hashchange', () => {
+                    const hash = window.location.hash || '#home';
+                    if (hash === '#home') renderHome();
+                    else if (hash === '#projects') renderProjects();
+                    else if (hash === '#experiences-certifications') renderExperiencesAndCertifications();
+                });
+
+                // Initial render based on hash
+                const hash = window.location.hash || '#home';
+                if (hash === '#home') renderHome();
+                else if (hash === '#projects') renderProjects();
+                else if (hash === '#experiences-certifications') renderExperiencesAndCertifications();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                const contentDiv = document.getElementById('content');
+                contentDiv.innerHTML = `
+                    <div class="home-text" id="home">
+                        <h1>Hi! I am Othmane,</h1>
+                        <p>I merge cybersecurity, IoT, AI, and embedded systems into innovative projects.</p>
+                        <p>Come in</p>
+                        <p style="color: #ff5555;">Error loading content. Please ensure data.json is accessible and try again.</p>
+                    </div>
+                `;
+            }
+        }
+
+        loadContent();
+    </script>
+</body>
+</html>
