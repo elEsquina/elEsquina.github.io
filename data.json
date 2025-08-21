@@ -1,20 +1,13 @@
 {
     "projects": [
         {
-            "title": "Online Bookstore",
-            "description": "This project implements a RESTful API for an online bookstore to manage books, authors, and sales reports. Features include: Authentication using UUID Bearer tokens. Book Management to add, update, retrieve, and delete books with filtering by title, author, or genre. Author Management to add, update, retrieve, and delete authors. Sales Reporting to generate daily sales reports with total revenue and top-selling books, saved as JSON files. Middlewares for token-based authentication, request logging, and context-based database access. Scalability with PostgreSQL, layered design, and graceful shutdown. Technologies Used: Go for the backend and PostgreSQL for data storage. ",
-            "github": "https://github.com/elEsquina/GoingBookingStoring",
-            "link": "",
-            "video": "",
-            "date": "February 2025"
-        },
-        {
             "title": "WoahACPU",
             "description": "WoahACPU is a process scheduling simulator developed for the Operating Systems course, visualizing how processes are selected by different scheduling algorithms. <br> Features include: Unity-based simulation built with Unity 2021.3.22f1, supporting cross-platform deployment (Android, Windows). Python backend to benchmark and serve process information, either randomly generated or loaded from Server/processes.json. ",
             "github": "https://github.com/elEsquina/WoahACPU",
             "link": "",
             "video": "https://youtube.com/embed/BzcBxdipPPo",
-            "date": "February 2025"
+            "date": "May 2025",
+            "report": "reports/WoahACPU.pdf"
         },
         {
             "title": "Symbolic Control for Nonlinear Systems",
@@ -22,7 +15,8 @@
             "github": "https://github.com/elEsquina/Symbolic-Control-For-Non-Linear-Systems",
             "link": "",
             "video": "",
-            "date": "December 2024"
+            "date": "December 2024",
+            "report": "reports/SymbolicControl.pdf"
         },
         {
             "title": "COOL Compiler",
@@ -30,7 +24,8 @@
             "github": "https://github.com/elEsquina/Go-Cool-Compiler",
             "link": "",
             "video": "",
-            "date": "October 2024"
+            "date": "March 2025",
+            "report": "reports/CoolCompiler.pdf"
         },
         {
             "title": "Faceless channel AI video generator",
@@ -40,19 +35,21 @@
             "date": "August 2024"
         },
         {
+            "title": "Online Bookstore (First Go Project + Learning Devops)",
+            "description": "This project implements a RESTful API for an online bookstore to manage books, authors, and sales reports. Features include: Authentication using UUID Bearer tokens. Book Management to add, update, retrieve, and delete books with filtering by title, author, or genre. Author Management to add, update, retrieve, and delete authors. Sales Reporting to generate daily sales reports with total revenue and top-selling books, saved as JSON files. Middlewares for token-based authentication, request logging, and context-based database access. Scalability with PostgreSQL, layered design, and graceful shutdown. Technologies Used: Go for the backend and PostgreSQL for data storage. ",
+            "github": "https://github.com/elEsquina/GoingBookingStoring",
+            "link": "",
+            "video": "",
+            "date": "February 2025"
+        },
+        {
             "title": "Hamming code error correxion using RISC V assembly",
             "description": "In this project, I focused on developing a Hamming code algorithm using RISC-V assembly language. My goal was to implement error detection and correction techniques, specifically targeting single-bit errors in data transmission. The project involved writing assembly code to generate the Hamming code, as well as verifying and correcting errors in received data. Through this implementation, I gained a deeper understanding of low-level programming, the structure of RISC-V assembly, and how error-correcting codes function to ensure data integrity in communication systems.",
             "github": "https://github.com/elEsquina/Error-Correction-Hamming-Code/tree/main",
             "link": "",
             "video": "",
-            "date": "May 2024"
-        },
-        {
-            "title": "Airnest",
-            "description": "Welcome to our Flight Booking System! This platform streamlines the flight booking process, providing users with a convenient and user-friendly experience. The system includes secure transactions, comprehensive database management, and efficient installation procedures. This is a database management course final project.",
-            "link": "",
-            "video": "https://www.youtube.com/embed/TzYWaekTWJo",
-            "date": "November 2023"
+            "date": "May 2024",
+            "report": "reports/HammingCode.pdf"
         },
         {
             "title": "Traffic Simulation and Modeling",
@@ -60,7 +57,17 @@
             "github": "https://github.com/SafaeHaj/TrafficSimulator",
             "link": "",
             "video": "https://www.youtube.com/embed/Q5AumJFbLNg",
-            "date": "November 2023"
+            "date": "November 2023",
+            "report": "reports/TrafficSim.pdf"
+        },
+        {
+            "title": "Airnest",
+            "description": "Welcome to our Flight Booking System! This platform streamlines the flight booking process, providing users with a convenient and user-friendly experience. The system includes secure transactions, comprehensive database management, and efficient installation procedures. This is a database management course final project.",
+            "link": "",
+            "video": "https://www.youtube.com/embed/TzYWaekTWJo",
+            "github": "https://github.com/SafaeHaj/um6p-cs-introdb-project2-Baddou",
+            "date": "November 2023",
+            "report": "reports/Airnest.pdf"
         },
         {
             "title": "R2D2 Robot",
@@ -139,7 +146,8 @@
             "company": "Upfund",
             "date": "February 2025 - May 2025",
             "description": "Created an AI Voice Agent for Building Information on Command for Upfund, enabling real estate professionals to access building data via voice requests on WhatsApp. Built a backend system and message processing pipeline using Retrieval-Augmented Generation technic (RAG), and FastAPI. Vectorized data and stored it in DuckDB, ensuring reliable data handling with a Pydantic-based validation pipeline. Designed a modular, scalable system to deliver accurate, real-time building information.",
-            "link": ""
+            "link": "",
+            "report": "reports/DataEngineerUpfund.pdf"
         },
 
         {
@@ -154,7 +162,8 @@
             "company": "Youth Research Forum, Qatar University",
             "date": "2023 - 2024",
             "description": "Securing LoRaWAN IoT Systems for Health Data Protection: Submitted a research paper to the 7th Youth Research Forum (YRF) 2024 (Qatar University) and the 2025 8th IEEE CiSt Congress. The paper focuses on security enhancements for LoRaWAN-based IoT infrastructures to protect sensitive health data against emerging cyber threats.<br>Critical Digital Literacy in the MENA Region: Submitted a research paper to the 6th YRF 2024 on improving stochastic reputation systems to combat fake news and enhance social media security.",
-            "link": ""
+            "link": "",
+            "report": "reports/HavingMyFun.pdf"
         },
         {
             "title": "Forgebots UM6P Chair",

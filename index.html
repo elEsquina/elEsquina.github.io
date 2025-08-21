@@ -9,7 +9,7 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Noto Serif', serif;
+            font-family: 'Times New Roman', Times, serif; /* LaTeX-like font */
             background: #000000; /* Solid black background */
             color: #ffffff;
             overflow-x: hidden;
@@ -51,7 +51,7 @@
             text-decoration: none;
             margin: 0 1.5rem;
             font-size: calc(1rem + 0.5vw); /* Larger on wider screens */
-            font-family: 'Noto Serif', serif;
+            font-family: 'Times New Roman', Times, serif;
             transition: color 0.3s;
         }
 
@@ -98,21 +98,21 @@
         h1 {
             font-size: calc(2rem + 1vw); /* Larger on wider screens */
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-            font-family: 'Noto Serif', serif;
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
         }
 
         h2 {
             font-size: calc(1.6rem + 0.5vw); /* Larger for section headings */
             margin: 20px 0 10px;
-            font-family: 'Noto Serif', serif;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         p {
             font-size: calc(1rem + 0.3vw); /* Slightly larger text */
             margin: 10px 0;
             line-height: 1.6;
-            font-family: 'Noto Serif', serif;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         .home-text p:last-child {
@@ -166,7 +166,7 @@
         .card h3, .experience-card h3 {
             margin: 0 0 10px;
             font-size: calc(1.3rem + 0.3vw); /* Larger title */
-            font-family: 'Noto Serif', serif;
+            font-family: 'Times New Roman', Times, serif;
             display: flex;
             justify-content: flex-start; /* Left-align title and icons */
             gap: 10px;
@@ -187,12 +187,13 @@
             margin: 0 0 10px;
             font-size: calc(1rem + 0.2vw); /* Larger body text */
             line-height: 1.5;
-            font-family: 'Noto Serif', serif;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         .card a:not(.icon), .experience-card a:not(.icon) {
             color: #00b7ff;
             text-decoration: none;
+            margin-right: 15px; /* Space between buttons */
         }
 
         .card a:not(.icon):hover, .experience-card a:not(.icon):hover {
@@ -315,7 +316,6 @@
         <div class="home-text" id="home">
             <h1>Hi! I am Othmane,</h1>
             <p>I merge cybersecurity, IoT, AI, and embedded systems into innovative projects.</p>
-            <p><a href="#projects">Come in</a></p>
         </div>
     </div>
 
@@ -445,7 +445,6 @@
                         <div class="home-text" id="home">
                             <h1>Hi! I am Othmane,</h1>
                             <p>I merge cybersecurity, IoT, AI, and embedded systems into innovative projects.</p>
-                            <p>Come in</p>
                         </div>
                     `;
                 }
@@ -457,7 +456,7 @@
                             <div class="card">
                                 <h3>
                                     ${project.title}
-                                 </h3>
+                                </h3>
                                 <p>${project.date}</p>
                                 ${project.video ? `
                                     <div class="video-container">
@@ -465,12 +464,17 @@
                                     </div>
                                 ` : ''}
                                 <div>${project.description}</div>
-                                ${project.github ? `
-                                    <p><a href="${project.github}" target="_blank">View Source Code</a></p>
-                                ` : ''}
-                                ${project.link ? `
-                                    <p><a href="${project.link}" target="_blank">View Project</a></p>
-                                ` : ''}
+                                <p>
+                                    ${project.github ? `
+                                        <a href="${project.github}" target="_blank">View Source Code</a>
+                                    ` : ''}
+                                    ${project.report ? `
+                                        <a href="${project.report}" target="_blank">View Report</a>
+                                    ` : ''}
+                                    ${project.link ? `
+                                        <a href="${project.link}" target="_blank">View Project</a>
+                                    ` : ''}
+                                </p>
                             </div>
                         `;
                     });
@@ -489,13 +493,18 @@
                                 <div class="experience-card">
                                     <h3>
                                         ${exp.title}
-                                     </h3>
+                                    </h3>
                                     <p><strong>Company:</strong> ${exp.company}</p>
                                     <p><strong>Date:</strong> ${exp.date}</p>
                                     <p>${exp.description}</p>
-                                    ${exp.link ? `
-                                        <p><a href="${exp.link}" target="_blank">View Details</a></p>
-                                    ` : ''}
+                                    <p>
+                                        ${exp.link ? `
+                                            <a href="${exp.link}" target="_blank">View Details</a>
+                                        ` : ''}
+                                        ${exp.report ? `
+                                            <a href="${exp.report}" target="_blank">View Report</a>
+                                        ` : ''}
+                                    </p>
                                 </div>
                             `;
                         });
@@ -512,7 +521,6 @@
                                 <div class="card">
                                     <h3>
                                         ${cert.title}
-                                    
                                     </h3>
                                     <p><strong>Issued by:</strong> ${cert.issuer}</p>
                                     <p><strong>Date:</strong> ${cert.date}</p>
@@ -550,7 +558,6 @@
                     <div class="home-text" id="home">
                         <h1>Hi! I am Othmane,</h1>
                         <p>I merge cybersecurity, IoT, AI, and embedded systems into innovative projects.</p>
-                        <p>Come in</p>
                         <p style="color: #ff5555;">Error loading content. Please ensure data.json is accessible and try again.</p>
                     </div>
                 `;
