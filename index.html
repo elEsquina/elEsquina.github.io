@@ -190,14 +190,24 @@
             font-family: 'Times New Roman', Times, serif;
         }
 
-        .card a:not(.icon), .experience-card a:not(.icon) {
-            color: #00b7ff;
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #00b7ff; /* Blue background */
+            color: #ffffff;
             text-decoration: none;
-            margin-right: 15px; /* Space between buttons */
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-top: 10px;
+            font-size: calc(0.9rem + 0.2vw);
+            transition: background 0.3s, transform 0.2s;
+            font-family: 'Times New Roman', Times, serif;
         }
 
-        .card a:not(.icon):hover, .experience-card a:not(.icon):hover {
-            text-decoration: underline;
+        .button:hover {
+            background: #800080; /* Purple hover effect */
+            transform: scale(1.05);
+            text-decoration: none;
         }
 
         .video-container {
@@ -295,6 +305,11 @@
 
             .card p, .experience-card p {
                 font-size: calc(0.9rem + 0.2vw);
+            }
+
+            .button {
+                padding: 6px 12px;
+                font-size: calc(0.8rem + 0.2vw);
             }
         }
     </style>
@@ -466,13 +481,13 @@
                                 <div>${project.description}</div>
                                 <p>
                                     ${project.github ? `
-                                        <a href="${project.github}" target="_blank">View Source Code</a>
+                                        <a href="${project.github}" target="_blank" class="button">View Source Code</a>
                                     ` : ''}
                                     ${project.report ? `
-                                        <a href="${project.report}" target="_blank">View Report</a>
+                                        <a href="${project.report}" target="_blank" class="button">View Report</a>
                                     ` : ''}
                                     ${project.link ? `
-                                        <a href="${project.link}" target="_blank">View Project</a>
+                                        <a href="${project.link}" target="_blank" class="button">View Project</a>
                                     ` : ''}
                                 </p>
                             </div>
@@ -499,10 +514,10 @@
                                     <p>${exp.description}</p>
                                     <p>
                                         ${exp.link ? `
-                                            <a href="${exp.link}" target="_blank">View Details</a>
+                                            <a href="${exp.link}" target="_blank" class="button">View Details</a>
                                         ` : ''}
                                         ${exp.report ? `
-                                            <a href="${exp.report}" target="_blank">View Report</a>
+                                            <a href="${exp.report}" target="_blank" class="button">View Report</a>
                                         ` : ''}
                                     </p>
                                 </div>
@@ -527,6 +542,9 @@
                                     ${cert.image ? `
                                         <img src="${cert.image}" alt="${cert.title}" class="certificate-image">
                                     ` : '<p>No certificate image available.</p>'}
+                                    ${cert.report ? `
+                                            <a href="${cert.report}" target="_blank" class="button">View Report</a>
+                                        ` : ''}
                                 </div>
                             `;
                         });

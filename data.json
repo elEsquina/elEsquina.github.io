@@ -185,8 +185,8 @@
             "title": "LDC (Local Domotics Competition) First Prize",
             "issuer": "UM6P SAP+D + UM6P SOLE",
             "date": "February 2025",
-            "image": "https://via.placeholder.com/300x200?text=LDC+First+Prize",
-            "link": ""
+            "link": "",
+            "report": "reports/SUNTOWER.pdf"
         },
         {
             "title": "HTB International 42 The Network Meetup",
@@ -199,70 +199,70 @@
             "title": "Winter School on Next-Generation AI and Economic Applications",
             "issuer": "OCP Group, EMINES UM6P, L'X Polytechnique",
             "date": "2025",
-            "image": "https://via.placeholder.com/300x200?text=Winter+School+AI",
+            "image": "Certificats/AIWinterSchool2025.jpg",
             "link": ""
         },
         {
             "title": "IBM SkillsBuild Data Fundamentals",
             "issuer": "IBM",
             "date": "2024",
-            "image": "https://via.placeholder.com/300x200?text=IBM+Data+Fundamentals",
+            "image": "Certificats/IBMDataFund.jpg",
             "link": ""
         },
         {
             "title": "IBM SkillsBuild Cybersecurity Fundamentals",
             "issuer": "IBM",
             "date": "2024",
-            "image": "https://via.placeholder.com/300x200?text=IBM+Cybersecurity+Fundamentals",
+            "image": "Certificats/IBMCyberFund.jpg",
             "link": ""
         },
     {
             "title": "UM6P MDA Cybersecurity Course",
             "issuer": "UM6P + Morocco Digital Academy",
             "date": "2024",
-            "image": "https://via.placeholder.com/300x200?text=UM6P+MDA+Cybersecurity",
+            "image": "Certificats/UM6PMDACyber.jpg",
             "link": ""
         },
         {
             "title": "ISC2 Security Principles",
             "issuer": "ISC2",
             "date": "2024",
-            "image": "https://via.placeholder.com/300x200?text=ISC2+Security+Principles",
+            "image": "Certificats/SecPrinciplesISC2.jpg",
             "link": ""
         },
         {
             "title": "NYU Cyber Attack Countermeasures",
             "issuer": "New York Tandon University + Coursera",
             "date": "2024",
-            "image": "https://via.placeholder.com/300x200?text=NYU+Cyber+Attack+Countermeasures",
+            "image": "Certificats/NYUCounterMes.jpg",
             "link": ""
         },
         {
             "title": "NYU Real-Time Cyber Threat Detection and Mitigation",
             "issuer": "New York Tandon University + Coursera",
             "date": "2024",
-            "image": "https://via.placeholder.com/300x200?text=NYU+Cyber+Threat+Detection",
+            "image": "Certificats/nyuRealTime.jpg",
             "link": ""
         },
         {
             "title": "NYU Enterprise and Infrastructure Security",
             "issuer": "New York Tandon University + Coursera",
             "date": "2024",
-            "image": "https://via.placeholder.com/300x200?text=NYU+Enterprise+Security",
+            "image": "Certificats/NYUEntreprise.jpg",
             "link": ""
         },
         {
             "title": "URC and NRC (University and National Robotics Competition)",
             "issuer": "UM6P EMINES + UM6P SOLE",
             "date": "2025",
-            "image": "https://via.placeholder.com/300x200?text=URC+NRC+2025",
+            "image": "Certificats/URC2025.jpg",
             "link": ""
         },
         {
             "title": "URC and NRC (University and National Robotics Competition)",
             "issuer": "UM6P EMINES + UM6P SOLE",
             "date": "2024",
-            "image": "https://via.placeholder.com/300x200?text=URC+NRC+2023",
+            "image": "Certificats/NRC2024.jpg",
             "link": ""
         },
         {
