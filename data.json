@@ -10,6 +10,15 @@
             "report": "reports/WoahACPU.pdf"
         },
         {
+            "title": "COOL Compiler",
+            "description": "This project is a complete compiler for the Classroom Object-Oriented Language (COOL), implemented in Go. Features include: Full implementation of COOL language features like classes, inheritance, methods, and control structures. Robust lexical and syntax analysis with recursive descent and Pratt parsing. Semantic analysis for type checking and symbol table construction. LLVM IR generation with optimizations like constant propagation and dead code elimination. Support for importing modules and modular program organization. <br> Setup: Requires Go 1.23.4, LLVM toolchain, and Make. Clone the repository and run 'make all I=pathtocoolfile' to build and compile a COOL program.",
+            "github": "https://github.com/elEsquina/Go-Cool-Compiler",
+            "link": "",
+            "video": "",
+            "date": "March 2025",
+            "report": "reports/CoolCompiler.pdf"
+        },
+        {
             "title": "Symbolic Control for Nonlinear Systems",
             "description": "This project implements symbolic abstraction and control for nonlinear systems.<br> Features include: Symbolic abstraction of nonlinear systems. Synthesis of controllers for safety, reachability, and other specifications. Integration with system dynamics and parameters.",
             "github": "https://github.com/elEsquina/Symbolic-Control-For-Non-Linear-Systems",
@@ -19,13 +28,13 @@
             "report": "reports/SymbolicControl.pdf"
         },
         {
-            "title": "COOL Compiler",
-            "description": "This project is a complete compiler for the Classroom Object-Oriented Language (COOL), implemented in Go. Features include: Full implementation of COOL language features like classes, inheritance, methods, and control structures. Robust lexical and syntax analysis with recursive descent and Pratt parsing. Semantic analysis for type checking and symbol table construction. LLVM IR generation with optimizations like constant propagation and dead code elimination. Support for importing modules and modular program organization. <br> Setup: Requires Go 1.23.4, LLVM toolchain, and Make. Clone the repository and run 'make all I=pathtocoolfile' to build and compile a COOL program.",
-            "github": "https://github.com/elEsquina/Go-Cool-Compiler",
+            "title": "PixelLMS",
+            "description": "PixelLMS is a full-stack web-based learning management system developed as a software engineering project. It allows educators and students to manage courses, assignments, events, and discussions with role-based access. <br> Features include: Secure user authentication (SHA256/MD5 with Factory Pattern), assignment and event tracking, MVC architecture using Spring Boot (backend) and Vue.js (frontend), robust database operations with raw SQL, and agile Scrum-based development. Notable design patterns used include Factory, Strategy, and Command.",
+            "github": "https://github.com/m-elhamlaoui/se-project-pixelLMS",
             "link": "",
-            "video": "",
-            "date": "March 2025",
-            "report": "reports/CoolCompiler.pdf"
+            "video": "https://youtube.com/embed/0GKMozvJSUg",
+            "date": "December 2024",
+            "report": "reports/PixelLMS.pdf"
         },
         {
             "title": "Faceless channel AI video generator",
