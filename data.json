@@ -189,6 +189,41 @@
     }
   ],
   "certificates": [
+   {
+      "title": "IBM AI Foundations",
+      "issuer": "IBM + Coursera",
+      "date": "2025",
+      "image": "Certificats/AIFoundations.jpg",
+      "link": ""
+    },
+    {
+      "title": "IBM AI",
+      "issuer": "IBM + Coursera",
+      "date": "2025",
+      "image": "Certificats/BuildingAI.jpg",
+      "link": ""
+    },
+    {
+      "title": "IBM AI",
+      "issuer": "IBM + Coursera",
+      "date": "2025",
+      "image": "Certificats/GenerativeAI.jpg",
+      "link": ""
+    },
+    {
+      "title": "IBM AI",
+      "issuer": "IBM + Coursera",
+      "date": "2025",
+      "image": "Certificats/GenerativeAI2.jpg",
+      "link": ""
+    },
+    {
+      "title": "IBM AI",
+      "issuer": "IBM + Coursera",
+      "date": "2025",
+      "image": "Certificats/Introduction2AI.jpg",
+      "link": ""
+    },
     {
       "title": "Winter School on Next-Generation AI and Economic Applications",
       "issuer": "OCP Group, EMINES UM6P, L'X Polytechnique",
@@ -218,6 +253,13 @@
       "link": ""
     },
     {
+      "title": "NYU Introduction To Cybersecurity",
+      "issuer": "New York Tandon University + Coursera",
+      "date": "2024",
+      "image": "Certificats/NYUFull.jpg",
+      "link": ""
+    },
+    {
       "title": "ISC2 Security Principles",
       "issuer": "ISC2",
       "date": "2024",
@@ -244,6 +286,13 @@
       "date": "2024",
       "image": "Certificats/NYUEntreprise.jpg",
       "link": ""
+    },
+    {
+      "title": "NYU Introduction To Cyber Attacks",
+      "issuer": "New York Tandon University + Coursera",
+      "date": "2024",
+      "image": "Certificats/NYUIntro.jpg",
+      "link": ""
     }
   ],
   "competitions": [
@@ -263,7 +312,7 @@
     },
     {
       "title": "NULLHAT Morocco 2025 CTF",
-      "issuer": "Hackerone - 1337 EliteSec",
+      "issuer": "Hackerone + 1337 EliteSec",
       "date": "Oct 31–Nov 1, 2025",
       "description": "National cybersecurity event with a high-stakes CTF - Ranked 4th in Morocco.",
       "image": "Certificats/nullhat.jpg"
@@ -277,57 +326,66 @@
     },
     {
       "title": "HTB International 42 The Network Meetup",
-      "issuer": "Hack The Box + 1337 EliteSec + 42 Germany.",
+      "issuer": "Hack The Box + 42 Germany + 1337 EliteSec",
       "date": "May 2025",
-      "image": "https://via.placeholder.com/300x200?text=HTB+Network+Meetup",
+      "image": "Certificats/Meetup42.jpg",
       "description": "International CTF + networking + security talks"
     },
     {
-      "title": "International Days of Ethical Hacking (IDEH) — CIT INPT",
+      "title": "CTF - International Days of Ethical Hacking (IDEH) - CIT INPT",
       "issuer": "CIT INPT + Orange CyberDefense + IT Road",
       "date": "Jan 17–18, 2026",
       "description": "Security conference + National CTF - Ranked 4th in Morocco",
-      "link": "https://www.linkedin.com/posts/um6p-acm-student-chapter_ideh7-cybersecurity-ctf-activity-7419154884660449280-7U9T?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Nfz8BedouWl-vShDKdKTEckNu_NtZTxo"
+      "image": "Certificats/idehINPT.jpg"
+    },
+    {
+      "title": "Math & Maroc National Olympiad Competition",
+      "issuer": "Math & Maroc + UM6P College Of Computing",
+      "date": "2025",
+      "image": "Certificats/mmc2.jpg"
     },
     {
       "title": "LDC (Local Domotics Competition) First Prize (February 2025)",
-      "issuer": "UM6P SAP+D + UM6P SOLE",
+      "issuer": "UM6P School Of Architecure & Design",
       "date": "February 2025",
       "description": "1st Prize • AI + IoT smart urban residence",
-      "link": "",
       "report": "reports/SUNTOWER.pdf"
     },
     {
       "title": "URC and NRC (University and National Robotics Competition) (2025)",
-      "issuer": "UM6P EMINES + UM6P SOLE",
+      "issuer": "UM6P EMINES",
       "date": "2025",
-      "description": "Robotics competition participation",
+      "description": "Robotics 24hours hackathon participation + Qualification to nationals",
       "link": "",
       "image": "Certificats/URC2025.jpg"
     },
     {
       "title": "URC and NRC (University and National Robotics Competition) (2024)",
-      "issuer": "UM6P EMINES + UM6P SOLE",
+      "issuer": "UM6P EMINES",
       "date": "2024",
-      "description": "Robotics competition participation",
+      "description": "Robotics 24hours hackathon participation + Qualification to nationals",
       "link": "",
       "image": "Certificats/NRC2024.jpg"
     },
     {
-      "title": "URC and NRC (University and National Robotics Competition) (2023)",
-      "issuer": "UM6P EMINES + UM6P SOLE",
+      "title": "Math & Maroc National Olympiad Competition",
+      "issuer": "Math & Maroc + UM6P Alkhawarizmi School of datascience, applied mathematics and modeling",
       "date": "2023",
-      "description": "Robotics competition participation",
-      "link": "",
-      "image": "https://via.placeholder.com/300x200?text=URC+NRC+2022"
+      "image": "Certificats/mmc1.jpg"
+    },
+    {
+      "title": "URC and NRC (University and National Robotics Competition) (2023)",
+      "issuer": "UM6P EMINES",
+      "date": "2023",
+      "description": "Robotics 24hours hackathon participation + Qualification to nationals",
+      "image": "Certificats/URC2023.jpeg"
     },
     {
       "title": "National Sailing Competitions (2022)",
       "issuer": "Federation Royale Marocaine de Voile",
       "date": "2022",
-      "description": "National level participation",
-      "link": "",
-      "image": "https://via.placeholder.com/300x200?text=National+Sailing+2022"
+      "description": "National level participation: Throne Cup, Green March Cup",
+      "image": "Certificats/voile.jpg"
     }
   ]
 }
