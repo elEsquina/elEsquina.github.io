@@ -5,13 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Othmane — Neon Sakura</title>
 
-  <!-- Favicon -->
   <link rel="icon" href="ico.png" type="image/png">
-
-  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -21,15 +16,12 @@
       --bg: #070816;
       --ink: rgba(255,255,255,.90);
       --muted: rgba(255,255,255,.66);
-
       --panel: rgba(10, 12, 28, .62);
       --panel2: rgba(10, 12, 28, .40);
       --border: rgba(255,255,255,.10);
-
       --cyan: #5de1ff;
       --pink: #ff4fd8;
       --purple: #a78bfa;
-
       --radius: 18px;
       --shadow: 0 18px 60px rgba(0,0,0,.55);
     }
@@ -44,7 +36,6 @@
       overflow-x:hidden;
     }
 
-    /* Sakura neon GIF background */
     .bg{
       position:fixed;
       inset:0;
@@ -57,7 +48,6 @@
       transform: translateZ(0);
     }
 
-    /* readability overlay */
     .vignette{
       position:fixed;
       inset:0;
@@ -68,7 +58,6 @@
       pointer-events:none;
     }
 
-    /* scanlines */
     .scanlines{
       position:fixed;
       inset:0;
@@ -86,7 +75,6 @@
       opacity:.26;
     }
 
-    /* tiny grain */
     .grain{
       position:fixed;
       inset:-40%;
@@ -102,7 +90,6 @@
       100%{ transform:translate3d(2%, 2%, 0) rotate(1deg); }
     }
 
-    /* particles canvas */
     #particles{
       position:fixed;
       inset:0;
@@ -113,9 +100,8 @@
       opacity:.55;
     }
 
-    /* layout */
     .wrap{
-      max-width: 1080px;
+      max-width: 1120px;
       margin: 0 auto;
       padding: 22px 16px 76px;
     }
@@ -144,19 +130,20 @@
       display:flex;
       align-items:center;
       gap: 12px;
-      min-width: 220px;
+      min-width: 240px;
     }
-  .logo{
-    width:38px;
-    height:38px;
-    border-radius:12px;
-    background-image: url("./ico.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border:1px solid rgba(255,255,255,.14);
-    box-shadow: 0 0 22px rgba(93,225,255,.20), 0 0 28px rgba(255,79,216,.16);
-  }
+
+    .logo{
+      width:38px;
+      height:38px;
+      border-radius:12px;
+      background-image: url("./ico.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow: 0 0 22px rgba(93,225,255,.20), 0 0 28px rgba(255,79,216,.16);
+    }
 
     .brand h1{
       margin:0;
@@ -165,6 +152,7 @@
       letter-spacing: .6px;
       line-height: 1.2;
     }
+
     .brand span{
       display:block;
       margin-top:4px;
@@ -179,6 +167,7 @@
       gap: 10px;
       justify-content:flex-end;
     }
+
     nav a{
       color: var(--muted);
       text-decoration:none;
@@ -189,11 +178,13 @@
       transition: .18s ease;
       white-space:nowrap;
     }
+
     nav a:hover{
       color: var(--ink);
       border-color: rgba(255,255,255,.12);
       background: rgba(255,255,255,.04);
     }
+
     nav a.active{
       color: var(--ink);
       border-color: rgba(93,225,255,.30);
@@ -207,6 +198,7 @@
       gap: 10px;
       margin-left: 4px;
     }
+
     .social a{
       width: 34px;
       height: 34px;
@@ -219,16 +211,14 @@
       text-decoration:none;
       transition: .18s ease;
     }
+
     .social a:hover{
       transform: translateY(-1px);
       border-color: rgba(255,79,216,.35);
       box-shadow: 0 12px 22px rgba(0,0,0,.35);
     }
 
-    /* page shell */
-    main{
-      margin-top: 12px;
-    }
+    main{ margin-top: 12px; }
 
     .panel{
       margin-top: 18px;
@@ -240,6 +230,7 @@
       position:relative;
       overflow:hidden;
     }
+
     .panel::before{
       content:"";
       position:absolute;
@@ -263,13 +254,16 @@
       font-size: 12px;
       width: fit-content;
     }
+
     .dot{
-      width:8px; height:8px;
+      width:8px;
+      height:8px;
       border-radius: 99px;
       background: var(--cyan);
       box-shadow: 0 0 18px rgba(93,225,255,.55);
       animation: pulse 1.4s ease-in-out infinite;
     }
+
     @keyframes pulse{
       0%,100%{ transform:scale(1); opacity:.7; }
       50%{ transform:scale(1.35); opacity:1; }
@@ -277,17 +271,18 @@
 
     .hero{
       display:grid;
-      grid-template-columns: 1.2fr .8fr;
+      grid-template-columns: 1.25fr .75fr;
       gap: 16px;
       align-items:stretch;
     }
 
     .hero h2{
       margin: 14px 0 10px;
-      font-size: clamp(26px, 4vw, 44px);
+      font-size: clamp(28px, 4vw, 46px);
       letter-spacing: -0.02em;
       line-height: 1.05;
     }
+
     .glow{
       background: linear-gradient(90deg, var(--cyan), var(--pink));
       -webkit-background-clip:text;
@@ -295,53 +290,14 @@
       color:transparent;
       text-shadow: 0 0 30px rgba(93,225,255,.12), 0 0 30px rgba(255,79,216,.10);
     }
+
     .lead{
       margin: 0 0 14px;
       color: var(--muted);
-      line-height: 1.55;
+      line-height: 1.6;
       font-size: 15px;
-      max-width: 62ch;
+      max-width: 64ch;
     }
-
-
-    /* achievements */
-    .achievements{
-      margin-top: 12px;
-      padding: 12px 12px;
-      border-radius: 16px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-    }
-    .ach-title{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      margin-bottom: 10px;
-    }
-    .ach-list{
-      list-style:none;
-      padding:0;
-      margin:0;
-      display:flex;
-      flex-direction:column;
-      gap: 8px;
-    }
-    .ach-list li{
-      display:flex;
-      align-items:flex-start;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.45;
-    }
-    .ach-list i{
-      margin-top: 2px;
-      color: rgba(255,255,255,.92);
-      text-shadow: 0 0 18px rgba(93,225,255,.16), 0 0 18px rgba(255,79,216,.10);
-      width: 18px;
-      text-align:center;
-    }
-    .ach-list b{ color: rgba(255,255,255,.88); }
 
     .actions{
       display:flex;
@@ -369,11 +325,13 @@
       user-select:none;
       white-space:nowrap;
     }
+
     .btn:hover{
       transform: translateY(-1px);
       border-color: rgba(255,255,255,.22);
       box-shadow: 0 10px 24px rgba(0,0,0,.35);
     }
+
     .btn.primary{
       border-color: rgba(255,79,216,.42);
       background:
@@ -391,41 +349,50 @@
       position:relative;
       overflow:hidden;
     }
+
     .sidecard::after{
       content:"";
       position:absolute;
       inset:-40px;
       background:
-        conic-gradient(from 180deg at 50% 50%,
-          rgba(93,225,255,.14),
-          rgba(255,79,216,.14),
-          rgba(167,139,250,.14),
-          rgba(93,225,255,.14)
-        );
+        conic-gradient(from 180deg at 50% 50%, rgba(93,225,255,.14), rgba(255,79,216,.14), rgba(167,139,250,.14), rgba(93,225,255,.14));
       opacity:.16;
       filter: blur(16px);
       animation: spin 10s linear infinite;
       pointer-events:none;
     }
+
     @keyframes spin{ to{ transform: rotate(360deg); } }
     .sidecard > *{ position:relative; }
 
-    .stats{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 10px;
+    .side-list{
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
     }
-    .stat{
+
+    .side-list li{
+      display:flex;
+      gap: 10px;
+      align-items:flex-start;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
       padding: 12px;
       border-radius: 14px;
-      border:1px solid rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.08);
       background: rgba(255,255,255,.04);
     }
-    .stat b{ display:block; font-size: 15px; }
-    .stat span{ display:block; margin-top:6px; font-size: 12px; color: var(--muted); }
 
-    /* content sections */
+    .side-list i{
+      margin-top: 2px;
+      color: rgba(255,255,255,.92);
+      width: 16px;
+      text-align:center;
+    }
+
     .title-row{
       display:flex;
       align-items:center;
@@ -434,11 +401,9 @@
       gap: 10px;
       margin-bottom: 10px;
     }
-    h3{
-      margin: 0;
-      font-size: 16px;
-      letter-spacing: .2px;
-    }
+
+    h3{ margin: 0; font-size: 16px; letter-spacing: .2px; }
+
     .badge{
       font-size: 11px;
       padding: 5px 9px;
@@ -455,6 +420,20 @@
       margin-top: 12px;
     }
 
+    .project-grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .featured-grid{
+      display:grid;
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .featured-card,
     .card{
       border-radius: 16px;
       border:1px solid rgba(255,255,255,.10);
@@ -464,49 +443,98 @@
       position:relative;
       overflow:hidden;
     }
+
+    .featured-card:hover,
     .card:hover{
       transform: translateY(-2px);
       border-color: rgba(93,225,255,.22);
       box-shadow: 0 20px 60px rgba(0,0,0,.40);
     }
-    .card h4{
+
+    .featured-card{
+      display:grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items:start;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+    }
+
+    .card h4,
+    .featured-card h4{
       margin: 0 0 6px;
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.2;
     }
+
     .meta{
       margin: 0 0 10px;
       color: rgba(255,255,255,.52);
       font-size: 12px;
     }
+
     .desc{
       color: var(--muted);
       font-size: 13px;
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
-    .chips{
+    .chips,
+    .filter-row{
       display:flex;
       flex-wrap:wrap;
       gap: 8px;
-      margin-top: 10px;
     }
-    .chip{
+
+    .chips{ margin-top: 10px; }
+    .filter-row{ margin: 10px 0 6px; }
+
+    .chip,
+    .filter-btn{
       font-size: 11px;
-      padding: 5px 8px;
+      padding: 6px 10px;
       border-radius: 999px;
       background: rgba(93,225,255,.07);
       border:1px solid rgba(93,225,255,.18);
       color: rgba(255,255,255,.82);
     }
+
     .chip.pink{ background: rgba(255,79,216,.07); border-color: rgba(255,79,216,.18); }
     .chip.purple{ background: rgba(167,139,250,.07); border-color: rgba(167,139,250,.18); }
+
+    .filter-btn{
+      cursor:pointer;
+      background: rgba(255,255,255,.04);
+      border-color: rgba(255,255,255,.12);
+      transition: .18s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active{
+      background: rgba(93,225,255,.10);
+      border-color: rgba(93,225,255,.28);
+      color: var(--ink);
+    }
 
     .buttons{
       display:flex;
       flex-wrap:wrap;
       gap: 10px;
       margin-top: 12px;
+    }
+
+    .project-actions{
+      min-width: 150px;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+      align-items:flex-end;
+    }
+
+    .foot{
+      margin-top: 18px;
+      color: rgba(255,255,255,.45);
+      font-size: 12px;
+      text-align:center;
     }
 
     .video-container{
@@ -519,9 +547,10 @@
       border: 1px solid rgba(255,255,255,.10);
       background: rgba(0,0,0,.25);
     }
+
     .video-container iframe{
       position:absolute;
-      top:0; left:0;
+      inset:0;
       width:100%;
       height:100%;
       border:0;
@@ -535,31 +564,6 @@
       margin-top: 10px;
     }
 
-    .foot{
-      margin-top: 18px;
-      color: rgba(255,255,255,.45);
-      font-size: 12px;
-      text-align:center;
-    }
-
-    @media (max-width: 860px){
-      .tech-grid{ grid-template-columns: repeat(2, 1fr); }
-      .hero{ grid-template-columns: 1fr; }
-      .brand{ min-width:unset; }
-      .topbar{ flex-wrap:wrap; justify-content:center; }
-      nav{ justify-content:center; }
-    }
-
-    @media (max-width: 420px){
-      .tech-grid{ grid-template-columns: 1fr; }
-    }
-
-@media (prefers-reduced-motion: reduce){
-      .grain, .dot, .sidecard::after{ animation:none !important; }
-      .scanlines{ opacity:.10; }
-    }
-  
-    /* loader */
     .top-progress{
       position:fixed;
       top:0;
@@ -586,11 +590,13 @@
       backdrop-filter: blur(8px);
       transition: opacity .35s ease, transform .35s ease;
     }
+
     .loader.hidden{
       opacity:0;
       transform: translateY(-6px);
       pointer-events:none;
     }
+
     .loader-card{
       width:min(520px, 92vw);
       padding: 18px 18px 16px;
@@ -601,6 +607,7 @@
       position:relative;
       overflow:hidden;
     }
+
     .loader-card::before{
       content:"";
       position:absolute;
@@ -610,8 +617,10 @@
         radial-gradient(420px 220px at 85% 45%, rgba(255,79,216,.16), transparent 65%);
       pointer-events:none;
     }
+
     .loader-logo{
-      width:52px; height:52px;
+      width:52px;
+      height:52px;
       border-radius: 18px;
       background-image: url("./ico.png");
       background-size: cover;
@@ -621,10 +630,12 @@
       box-shadow: 0 0 26px rgba(93,225,255,.22), 0 0 32px rgba(255,79,216,.16);
       animation: floaty 2.1s ease-in-out infinite;
     }
+
     @keyframes floaty{
       0%,100%{ transform: translateY(0px); }
       50%{ transform: translateY(-4px); }
     }
+
     .loader-title{
       margin-top: 12px;
       font-family: "Press Start 2P", monospace;
@@ -632,12 +643,14 @@
       letter-spacing: .6px;
       position:relative;
     }
+
     .loader-sub{
       margin-top: 8px;
       color: var(--muted);
       font-size: 13px;
       position:relative;
     }
+
     .loader-bar{
       margin-top: 14px;
       height: 10px;
@@ -647,6 +660,7 @@
       overflow:hidden;
       position:relative;
     }
+
     .loader-bar-fill{
       height:100%;
       width: 12%;
@@ -656,19 +670,21 @@
       transition: width .35s ease;
       position:relative;
     }
+
     .loader-bar-fill::after{
       content:"";
       position:absolute;
-      top:0; left:-40%;
+      top:0;
+      left:-40%;
       width:40%;
       height:100%;
       background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent);
       animation: sweep 1.1s linear infinite;
       opacity:.8;
     }
-    @keyframes sweep{
-      to{ left:120%; }
-    }
+
+    @keyframes sweep{ to{ left:120%; } }
+
     .loader-hint{
       margin-top: 10px;
       font-size: 12px;
@@ -676,16 +692,12 @@
       position:relative;
     }
 
-    /* route/content enter animation */
-    #content.enter{
-      animation: contentIn .48s ease both;
-    }
+    #content.enter{ animation: contentIn .48s ease both; }
     @keyframes contentIn{
       from{ opacity:0; transform: translateY(8px); filter: blur(2px); }
       to{ opacity:1; transform: translateY(0); filter: blur(0); }
     }
 
-    /* skeleton shimmer */
     .skeleton{
       border-radius: 16px;
       border:1px solid rgba(255,255,255,.10);
@@ -693,34 +705,45 @@
       overflow:hidden;
       position:relative;
     }
+
     .skeleton::after{
       content:"";
       position:absolute;
-      top:0; left:-60%;
+      top:0;
+      left:-60%;
       width:60%;
       height:100%;
       background: linear-gradient(90deg, transparent, rgba(255,255,255,.10), transparent);
       animation: shimmer 1.25s linear infinite;
     }
-    @keyframes shimmer{
-      to{ left:120%; }
-    }
+
+    @keyframes shimmer{ to{ left:120%; } }
     .sk-line{ height: 12px; border-radius: 999px; background: rgba(255,255,255,.06); margin: 10px 0; }
     .sk-line.sm{ width: 45%; }
     .sk-line.md{ width: 72%; }
     .sk-line.lg{ width: 92%; }
 
-</style>
-</head>
+    @media (max-width: 860px){
+      .hero{ grid-template-columns: 1fr; }
+      .brand{ min-width:unset; }
+      .topbar{ flex-wrap:wrap; justify-content:center; }
+      nav{ justify-content:center; }
+      .featured-card{ grid-template-columns: 1fr; }
+      .project-actions{ align-items:flex-start; min-width: 0; }
+    }
 
+    @media (prefers-reduced-motion: reduce){
+      .grain, .dot, .sidecard::after, .loader-logo{ animation:none !important; }
+      .scanlines{ opacity:.10; }
+    }
+  </style>
+</head>
 <body>
   <div class="bg" aria-hidden="true"></div>
   <div class="vignette" aria-hidden="true"></div>
   <div class="scanlines" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
-
   <canvas id="particles"></canvas>
-
   <div id="top-progress" class="top-progress" aria-hidden="true"></div>
 
   <div id="loader" class="loader" role="status" aria-live="polite">
@@ -742,15 +765,16 @@
           <div class="logo" aria-hidden="true"></div>
           <div>
             <h1>@elesquina</h1>
-            <span>Othmane - Computer Science Engineering Student</span>
+            <span>Engineer building AI, systems, and security projects</span>
           </div>
         </div>
 
         <nav class="nav-links" aria-label="Primary">
-          <a href="#home" data-route="home">Home</a>
+          <a href="#about" data-route="about">About</a>
+          <a href="#professional-experience" data-route="professional-experience">Professional Experience</a>
           <a href="#projects" data-route="projects">Projects</a>
+          <a href="#certifications" data-route="certifications">Certifications</a>
           <a href="#competitions" data-route="competitions">Competitions</a>
-<a href="#experiences-certifications" data-route="experiences-certifications">Experiences</a>
         </nav>
 
         <div class="social" aria-label="Social links">
@@ -772,14 +796,11 @@
   </div>
 
   <script>
-    // ====== NAV ACTIVE ======
     const navLinks = Array.from(document.querySelectorAll("nav a[data-route]"));
     function setActive(route){
       navLinks.forEach(a => a.classList.toggle("active", a.dataset.route === route));
     }
 
-    
-    // ====== LOADER + TRANSITIONS ======
     const loader = document.getElementById("loader");
     const loaderFill = document.getElementById("loaderFill");
     const topProgress = document.getElementById("top-progress");
@@ -801,7 +822,6 @@
       if (!topProgress) return;
       topProgress.style.opacity = "1";
       topProgress.style.width = "0%";
-      // animate to 90% quickly
       requestAnimationFrame(() => {
         topProgress.style.transition = "width .35s ease, opacity .2s ease";
         topProgress.style.width = "90%";
@@ -819,19 +839,16 @@
       const content = document.getElementById("content");
       if (!content) return;
       content.classList.remove("enter");
-      // reflow to restart animation
       void content.offsetWidth;
       content.classList.add("enter");
     }
 
-    // quick keyboard shortcuts
     window.addEventListener("keydown", (e) => {
       if (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA")) return;
       if (e.key.toLowerCase() === "g") window.open("https://github.com/elEsquina", "_blank");
       if (e.key.toLowerCase() === "l") window.open("https://www.linkedin.com/in/othmane-azoubi-593814257", "_blank");
     });
 
-    // ====== PARTICLES (NEON SPARKLES) ======
     const canvas = document.getElementById('particles');
     const ctx = canvas.getContext('2d');
 
@@ -860,31 +877,24 @@
 
     class Particle {
       constructor(){ this.reset(); }
-
       reset(){
         this.x = Math.random() * window.innerWidth;
         this.y = Math.random() * window.innerHeight;
         this.size = Math.random() * 2.4 + 1.2;
         this.baseSize = this.size;
-
         this.speedX = Math.random() * 0.35 - 0.175;
         this.speedY = Math.random() * 0.35 - 0.175;
-
         this.alpha = Math.random() * 0.45 + 0.35;
         this.baseAlpha = this.alpha;
-
         this.isActive = false;
         this.activeTimer = 0;
         this.trail = [];
-
         this.color = palette[Math.floor(Math.random() * palette.length)];
       }
-
       update(){
         if (this.isActive){
           this.trail.push({ x: this.x, y: this.y, a: this.alpha });
           if (this.trail.length > trailLength) this.trail.shift();
-
           this.activeTimer -= 16.67;
           if (this.activeTimer <= 0){
             this.isActive = false;
@@ -895,15 +905,12 @@
         } else {
           this.x += this.speedX;
           this.y += this.speedY;
-
           if (this.x < -30 || this.x > window.innerWidth + 30) this.speedX *= -1;
           if (this.y < -30 || this.y > window.innerHeight + 30) this.speedY *= -1;
           this.trail = [];
         }
       }
-
       draw(){
-        // Trail
         for (let i = 0; i < this.trail.length; i++){
           const t = this.trail[i];
           const k = (i + 1) / this.trail.length;
@@ -913,13 +920,11 @@
           ctx.arc(t.x, t.y, this.size * k, 0, Math.PI * 2);
           ctx.fill();
         }
-        // Core
         ctx.fillStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${this.alpha})`;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
       }
-
       activate(){
         this.isActive = true;
         this.size = this.baseSize * 1.9;
@@ -952,33 +957,44 @@
     animateParticles();
     setInterval(activateRandomParticle, 1800);
 
-    // ====== CONTENT RENDERING (USING data.json) ======
+    function normalizeTags(tags){
+      return Array.isArray(tags) ? tags.filter(Boolean) : [];
+    }
+
+    function titleCase(str){
+      return String(str || '').replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    }
+
+    function renderTagChips(tags){
+      return normalizeTags(tags).map((tag, i) => {
+        const classes = ["chip", i % 3 === 1 ? "pink" : i % 3 === 2 ? "purple" : ""].filter(Boolean).join(" ");
+        return `<span class="${classes}">${titleCase(tag)}</span>`;
+      }).join("");
+    }
+
     async function loadContent() {
       const contentDiv = document.getElementById('content');
-
-        // Skeleton while loading
-        contentDiv.innerHTML = `
-          <section class="panel">
-            <div class="kicker"><span class="dot"></span> online</div>
-            <div class="hero" style="margin-top:12px;">
-              <div class="skeleton" style="padding:14px;">
-                <div class="sk-line lg"></div>
-                <div class="sk-line md"></div>
-                <div class="sk-line md"></div>
-                <div class="sk-line sm"></div>
-              </div>
-              <div class="skeleton" style="padding:14px;">
-                <div class="sk-line md"></div>
-                <div class="sk-line lg"></div>
-                <div class="sk-line sm"></div>
-                <div class="sk-line md"></div>
-              </div>
+      contentDiv.innerHTML = `
+        <section class="panel">
+          <div class="kicker"><span class="dot"></span> online</div>
+          <div class="hero" style="margin-top:12px;">
+            <div class="skeleton" style="padding:14px;">
+              <div class="sk-line lg"></div>
+              <div class="sk-line md"></div>
+              <div class="sk-line md"></div>
+              <div class="sk-line sm"></div>
             </div>
-          </section>
-        `;
-          contentEnter();
-        setLoaderProgress(18);
-
+            <div class="skeleton" style="padding:14px;">
+              <div class="sk-line md"></div>
+              <div class="sk-line lg"></div>
+              <div class="sk-line sm"></div>
+              <div class="sk-line md"></div>
+            </div>
+          </div>
+        </section>
+      `;
+      contentEnter();
+      setLoaderProgress(18);
 
       try {
         const response = await fetch('data.json');
@@ -986,138 +1002,137 @@
         const data = await response.json();
         setLoaderProgress(65);
 
-        function renderHome(){
-          setActive("home");
+        function renderAbout(){
+          setActive("about");
+          const highlights = [
+            "Building across AI, cybersecurity, systems, IoT, and embedded domains.",
+            "Strong mix of engineering execution, research-oriented thinking, and hands-on delivery.",
+            "Portfolio shaped around real projects, competitive problem solving, and technical breadth."
+          ];
+
           contentDiv.innerHTML = `
             <section class="panel">
               <div class="hero">
                 <div>
-                  <div class="kicker"><span class="dot"></span> online</div>
-                  <h2><span class="glow">Hi! I am Othmane,</span></h2>
-                  <p class="lead">I merge cybersecurity, IoT, AI, and embedded systems into innovative projects.</p>
-
-                  <div class="achievements" aria-label="Achievements">
-                    <div class="ach-title"><span class="badge">Achievements</span></div>
-                    <ul class="ach-list">
-                      <li><i class="fa-solid fa-trophy"></i><span><b>UofTCTF 2025:</b> 24th worldwide, <b>1st in Morocco</b> (UM6P College Of Computing CTF Team)</span></li>
-                      <li><i class="fa-solid fa-flag"></i><span><b>CTF Author and Player:</b> UM6P College of Computing Official Team</span></li>
-                      <li><i class="fa-solid fa-award"></i><span><b>1st Prize:</b> Local Domotics Competition @ UM6P (AI + IoT smart urban residence)</span></li>
-                      <li><i class="fa-solid fa-people-group"></i><span><b>Student Lead:</b> UM6P ACM Student Chapter Cyber Security Division (UM6P Rabat and Benguerir Campuses)</span></li>
-                    </ul>
-                  </div>
+                  <div class="kicker"><span class="dot"></span> available for opportunities</div>
+                  <h2><span class="glow">Hi, I’m Othmane.</span></h2>
+                  <p class="lead">I build applied projects across AI, data, cybersecurity, systems, IoT, and embedded computing. This portfolio focuses on shipped work, practical experiments, and technical depth.</p>
                   <div class="actions">
                     <a class="btn primary" href="#projects">View Projects</a>
-                    <a class="btn" href="https://github.com/elEsquina" target="_blank" rel="noreferrer">
-                      <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a class="btn" href="https://www.linkedin.com/in/othmane-azoubi-593814257" target="_blank" rel="noreferrer">
-                      <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
+                    <a class="btn" href="#professional-experience">Professional Experience</a>
+                    <a class="btn" href="https://github.com/elEsquina" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="btn" href="https://www.linkedin.com/in/othmane-azoubi-593814257" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
                   </div>
                 </div>
 
                 <aside class="sidecard">
-                  <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
-                    <span class="badge">Technologies I enjoy</span>
+                  <div class="title-row">
+                    <h3>Focus</h3>
+                    <span class="badge">Selected direction</span>
                   </div>
-
-                  
-                  <div class="tech-grid">
-                    <div class="tech"><i class="fa-brands fa-python"></i><span>Python</span></div>
-                    <div class="tech"><i class="fa-solid fa-code"></i><span>Go</span></div>
-                    <div class="tech"><i class="fa-solid fa-code"></i><span>C/C++</span></div>
-                    <div class="tech"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
-
-                    <div class="tech"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
-                    <div class="tech"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
-                    <div class="tech"><i class="fa-solid fa-cubes-stacked"></i><span>Kubernetes</span></div>
-                    <div class="tech"><i class="fa-brands fa-aws"></i><span>AWS</span></div>
-
-                    <div class="tech"><i class="fa-solid fa-gears"></i><span>CI/CD</span></div>
-                    <div class="tech"><i class="fa-solid fa-network-wired"></i><span>Nmap</span></div>
-                    <div class="tech"><i class="fa-solid fa-bug"></i><span>Burp Suite</span></div>
-                    <div class="tech"><i class="fa-solid fa-wave-square"></i><span>Wireshark</span></div>
-
-                    <div class="tech"><i class="fa-solid fa-magnifying-glass"></i><span>Ghidra</span></div>
-                    <div class="tech"><i class="fa-solid fa-terminal"></i><span>pwntools</span></div>
-                    <div class="tech"><i class="fa-solid fa-microchip"></i><span>IoT/Embedded</span></div>
-                    <div class="tech"><i class="fa-solid fa-microchip"></i><span>RISC‑V ASM</span></div>
-
-                  <div style="margin-top:12px;color:var(--muted);font-size:13px;line-height:1.45;">
-                    <span style="color:rgba(93,225,255,.9)">Quick jump:</span>
-                    <a href="#experiences-certifications" style="color:rgba(255,255,255,.85); text-decoration:none;">experiences →</a>
-                  </div>
+                  <ul class="side-list">
+                    ${highlights.map(item => `<li><i class="fa-solid fa-bolt"></i><span>${item}</span></li>`).join('')}
+                  </ul>
                 </aside>
               </div>
             </section>
           `;
+          contentEnter();
         }
 
         function renderProjects(){
           setActive("projects");
-          let html = `
+          const projects = Array.isArray(data.projects) ? data.projects : [];
+          const featured = projects.filter(p => p.featured);
+          const regular = featured.length ? projects.filter(p => !p.featured) : projects;
+          const allTags = [...new Set(projects.flatMap(p => normalizeTags(p.tags)).map(t => String(t).trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+
+          contentDiv.innerHTML = `
             <section class="panel">
               <div class="title-row">
                 <h3>Projects</h3>
-                <span class="badge">${data.projects?.length || 0} items</span>
+                <span class="badge">${projects.length} items</span>
               </div>
-              <div id="projects" class="grid">
+              <p class="lead" style="margin-bottom:8px; max-width:none;">Use tags to sort the work by category.</p>
+              <div class="filter-row" id="project-filters">
+                <button class="filter-btn active" type="button" data-filter="all">All</button>
+                ${allTags.map(tag => `<button class="filter-btn" type="button" data-filter="${tag}">${titleCase(tag)}</button>`).join('')}
+              </div>
+
+              ${featured.length ? `
+                <div class="title-row" style="margin-top:18px;">
+                  <h3>Featured</h3>
+                  <span class="badge">priority work</span>
+                </div>
+                <div class="featured-grid" id="featured-projects">
+                  ${featured.map((p, idx) => `
+                    <article class="featured-card project-item" data-tags="${normalizeTags(p.tags).join(' ')}">
+                      <div>
+                        <h4>${p.title || `Project ${idx + 1}`}</h4>
+                        <div class="meta">${p.date || ''}</div>
+                        <div class="desc">${p.description || ''}</div>
+                        ${normalizeTags(p.tags).length ? `<div class="chips">${renderTagChips(p.tags)}</div>` : ''}
+                      </div>
+                      <div class="project-actions">
+                        ${p.github ? `<a class="btn primary" href="${p.github}" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> Source</a>` : ''}
+                        ${p.report ? `<a class="btn" href="${p.report}" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i> Report</a>` : ''}
+                        ${p.link ? `<a class="btn" href="${p.link}" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>` : ''}
+                        ${p.video ? `<a class="btn" href="${p.video}" target="_blank" rel="noreferrer"><i class="fa-solid fa-play"></i> Video</a>` : ''}
+                      </div>
+                    </article>
+                  `).join('')}
+                </div>
+              ` : ''}
+
+              <div class="title-row" style="margin-top:18px;">
+                <h3>${featured.length ? 'All Projects' : 'Project Gallery'}</h3>
+                <span class="badge">compact view</span>
+              </div>
+              <div class="project-grid" id="project-grid">
+                ${regular.map((p, idx) => `
+                  <article class="card project-item" data-tags="${normalizeTags(p.tags).join(' ')}">
+                    <h4>${p.title || `Project ${idx + 1}`}</h4>
+                    <div class="meta">${p.date || ''}</div>
+                    <div class="desc">${p.description || ''}</div>
+                    ${normalizeTags(p.tags).length ? `<div class="chips">${renderTagChips(p.tags)}</div>` : ''}
+                    <div class="buttons">
+                      ${p.github ? `<a class="btn primary" href="${p.github}" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> Source</a>` : ''}
+                      ${p.report ? `<a class="btn" href="${p.report}" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i> Report</a>` : ''}
+                      ${p.link ? `<a class="btn" href="${p.link}" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>` : ''}
+                      ${p.video ? `<a class="btn" href="${p.video}" target="_blank" rel="noreferrer"><i class="fa-solid fa-play"></i> Video</a>` : ''}
+                    </div>
+                  </article>
+                `).join('')}
+              </div>
+            </section>
           `;
 
-          (data.projects || []).forEach((p, idx) => {
-            const chips = [];
-            if (p.github) chips.push('<span class="chip">GitHub</span>');
-            if (p.report) chips.push('<span class="chip pink">Report</span>');
-            if (p.video) chips.push('<span class="chip purple">Video</span>');
-            if (p.link) chips.push('<span class="chip">Link</span>');
-
-            html += `
-              <article class="card">
-                <h4>${p.title || `Project ${idx+1}`}</h4>
-                <div class="meta">${p.date || ""}</div>
-
-                ${p.video ? `
-                  <div class="video-container">
-                    <iframe
-                      src="${p.video}"
-                      title="${(p.title || "project") + " video"}"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                ` : ""}
-
-                <div class="desc">${p.description || ""}</div>
-
-                ${chips.length ? `<div class="chips">${chips.join("")}</div>` : ""}
-
-                <div class="buttons">
-                  ${p.github ? `<a class="btn primary" href="${p.github}" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> Source</a>` : ""}
-                  ${p.report ? `<a class="btn" href="${p.report}" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i> Report</a>` : ""}
-                  ${p.link ? `<a class="btn" href="${p.link}" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>` : ""}
-                </div>
-              </article>
-            `;
+          const filterButtons = Array.from(document.querySelectorAll('#project-filters .filter-btn'));
+          const items = Array.from(document.querySelectorAll('.project-item'));
+          filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+              const value = btn.dataset.filter;
+              filterButtons.forEach(b => b.classList.toggle('active', b === btn));
+              items.forEach(item => {
+                const tags = (item.dataset.tags || '').split(/\s+/).filter(Boolean);
+                const show = value === 'all' || tags.includes(value);
+                item.style.display = show ? '' : 'none';
+              });
+            });
           });
 
-          html += `</div></section>`;
-          contentDiv.innerHTML = html;
           contentEnter();
         }
 
-        
         function renderCompetitions(){
           setActive("competitions");
-
           const list = Array.isArray(data.competitions) ? data.competitions : [];
-
           let html = `
             <section class="panel">
               <div class="title-row">
-                <h3>Competitions <span class="badge" style="margin-left:10px;">CTF • events • prizes</span></h3>
+                <h3>Competitions</h3>
                 <span class="badge">${list.length} items</span>
               </div>
-
               <div class="grid">
           `;
 
@@ -1134,7 +1149,6 @@
               <article class="card">
                 <h4>🏆 ${c.title || ""}</h4>
                 <div class="meta">${c.issuer || ""} • ${c.date || ""}</div>
-
                 ${c.video ? `
                   <div class="video-container">
                     <iframe
@@ -1145,13 +1159,9 @@
                     ></iframe>
                   </div>
                 ` : ""}
-
                 ${c.image ? `<img src="${c.image}" alt="${c.title || "competition"}" class="certificate-image" loading="lazy" referrerpolicy="no-referrer">` : ""}
-
                 ${c.description ? `<div class="desc">${c.description}</div>` : `<div class="desc" style="opacity:.85;">—</div>`}
-
                 ${chips.length ? `<div class="chips">${chips.join("")}</div>` : ""}
-
                 <div class="buttons">
                   ${c.link ? `<a class="btn primary" href="${c.link}" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Details</a>` : ""}
                   ${c.report ? `<a class="btn" href="${c.report}" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i> Report</a>` : ""}
@@ -1165,17 +1175,50 @@
           contentEnter();
         }
 
-function renderExperiencesAndCertifications(){
-          setActive("experiences-certifications");
 
-          // experiences
+        function renderCertifications(){
+          setActive("certifications");
+          const list = Array.isArray(data.certificates) ? data.certificates : [];
           let html = `
             <section class="panel">
               <div class="title-row">
-                <h3>Experiences <span class="badge" style="margin-left:10px;">timeline</span></h3>
+                <h3>Certifications</h3>
+                <span class="badge">${list.length} items</span>
+              </div>
+              <div class="grid">
+          `;
+
+          if (list.length){
+            list.forEach((c) => {
+              html += `
+                <article class="card">
+                  <h4>${c.title || ""}</h4>
+                  <div class="meta">${c.issuer || ""} • ${c.date || ""}</div>
+                  ${c.image ? `<img src="${c.image}" alt="${c.title || "certificate"}" class="certificate-image" loading="lazy" referrerpolicy="no-referrer">` : ""}
+                  <div class="buttons">
+                    ${c.link ? `<a class="btn primary" href="${c.link}" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>` : ""}
+                    ${c.report ? `<a class="btn" href="${c.report}" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i> Report</a>` : ""}
+                  </div>
+                </article>
+              `;
+            });
+          } else {
+            html += `<div class="card"><div class="desc">No certifications available.</div></div>`;
+          }
+
+          html += `</div></section>`;
+          contentDiv.innerHTML = html;
+          contentEnter();
+        }
+
+        function renderProfessionalExperience(){
+          setActive("professional-experience");
+          let html = `
+            <section class="panel">
+              <div class="title-row">
+                <h3>Professional Experience</h3>
                 <span class="badge">${data.experiences?.length || 0} items</span>
               </div>
-
               <div class="grid">
           `;
 
@@ -1186,7 +1229,7 @@ function renderExperiencesAndCertifications(){
                   <h4>${e.title || ""}</h4>
                   <div class="meta">${e.company || ""} • ${e.date || ""}</div>
                   <div class="desc">${e.description || ""}</div>
-
+                  ${normalizeTags(e.tags).length ? `<div class="chips">${renderTagChips(e.tags)}</div>` : ''}
                   <div class="buttons">
                     ${e.link ? `<a class="btn primary" href="${e.link}" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Details</a>` : ""}
                     ${e.report ? `<a class="btn" href="${e.report}" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i> Report</a>` : ""}
@@ -1195,42 +1238,7 @@ function renderExperiencesAndCertifications(){
               `;
             });
           } else {
-            html += `<div class="card"><div class="desc">No experiences available.</div></div>`;
-          }
-
-          html += `</div></section>`;
-
-          // certifications
-          html += `
-            <section class="panel">
-              <div class="title-row">
-                <h3>Certifications <span class="badge" style="margin-left:10px;">proof</span></h3>
-                <span class="badge">${(data.certificates?.filter(c => !(/(ctf|competition|prize|hackathon|htb|meetup)/i.test(String(c.title || ""))) ).length) || 0} items</span>
-              </div>
-
-              <div class="grid">
-          `;
-
-          if (data.certificates && data.certificates.length){
-            const isCompetition = (title) => /(ctf|competition|prize|hackathon|htb|meetup)/i.test(String(title || ""));
-            const cleanCertificates = data.certificates.filter(c => !isCompetition(c.title));
-            cleanCertificates.forEach((c) => {
-              html += `
-                <article class="card">
-                  <h4>${c.title || ""}</h4>
-                  <div class="meta">${c.issuer || ""} • ${c.date || ""}</div>
-
-                  ${c.image ? `<img src="${c.image}" alt="${c.title || "certificate"}" class="certificate-image">` : ""}
-
-                  <div class="buttons">
-                    ${c.link ? `<a class="btn primary" href="${c.link}" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>` : ""}
-                    ${c.report ? `<a class="btn" href="${c.report}" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i> Report</a>` : ""}
-                  </div>
-                </article>
-              `;
-            });
-          } else {
-            html += `<div class="card"><div class="desc">No certificates available.</div></div>`;
+            html += `<div class="card"><div class="desc">No experience entries available.</div></div>`;
           }
 
           html += `</div></section>`;
@@ -1238,15 +1246,14 @@ function renderExperiencesAndCertifications(){
           contentEnter();
         }
 
-        // router
         function router(){
-          const hash = window.location.hash || "#home";
-          if (hash === "#home") return renderHome();
+          const hash = window.location.hash || "#about";
+          if (hash === "#about") return renderAbout();
           if (hash === "#projects") return renderProjects();
+          if (hash === "#certifications") return renderCertifications();
           if (hash === "#competitions") return renderCompetitions();
-          if (hash === "#experiences-certifications") return renderExperiencesAndCertifications();
-          // fallback
-          window.location.hash = "#home";
+          if (hash === "#professional-experience") return renderProfessionalExperience();
+          window.location.hash = "#about";
         }
 
         window.addEventListener("hashchange", () => { showTopProgress(); router(); });
@@ -1254,14 +1261,13 @@ function renderExperiencesAndCertifications(){
         router();
         setLoaderProgress(92);
         setTimeout(hideLoader, 260);
-
       } catch (error) {
         console.error("Error loading data:", error);
         contentDiv.innerHTML = `
           <section class="panel">
             <div class="kicker"><span class="dot"></span> error</div>
             <h2><span class="glow">Couldn’t load data.json</span></h2>
-            <p class="lead">Make sure <b>data.json</b> is next to <b>index.html</b>.</p>
+            <p class="lead">Make sure <b>data.json</b> is next to <b>portfolio_refined.html</b>.</p>
           </section>
         `;
         setLoaderProgress(100);

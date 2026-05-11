@@ -1,195 +1,252 @@
 {
   "projects": [
     {
+      "title": "EventualSmartFactory",
+      "description": "Built a production-style supply-chain intelligence dashboard with FastAPI, Neo4j, visual analytics, and an AI copilot that routes questions across Semantic RAG, GraphRAG, and Text2Cypher.",
+      "github": "https://github.com/elEsquina/EventualSmartFactory",
+      "link": "",
+      "video": "",
+      "date": "Mai 2026",
+      "report": "reports/SupplyGraphOps.pdf",
+      "tags": ["fullstack", "frontend", "backend", "ai", "data", "graphrag", "graph"],
+      "featured": false
+    },
+    {
+      "title": "Malware Graph Clustering with ML and GNN Embeddings",
+      "description": "Built a malware clustering notebook for grouping similar samples using feature preprocessing, dimensionality reduction, unsupervised learning, and graph-based malware representation ideas.",
+      "github": "https://github.com/elEsquina/Malware-Graph-Clustering-with-ML-and-GNN-Embeddings",
+      "link": "",
+      "video": "",
+      "date": "2026",
+      "report": "",
+      "tags": ["cybersecurity", "ai", "data", "malware", "ml", "research", "neural-networks", "graph"],
+      "featured": false
+    },
+    {
+      "title": "Distributed Hash Table",
+      "description": "Designed a Python asyncio Kademlia-inspired DHT key-value store with PING, FIND_NODE, FIND_VALUE, STORE RPCs, XOR-distance routing, k-buckets, iterative lookup, replication, TTL, and multi-node testing.",
+      "github": "https://github.com/YahyaMansoub/Distributed_Hash_Table",
+      "link": "",
+      "video": "",
+      "date": "March 2026",
+      "tags": ["systems", "backend", "distributed", "networking", "python"],
+      "featured": false
+    },
+    {
+      "title": "0xCracker",
+      "description": "Built an agentic binary-analysis workflow for CTF reverse engineering and exploitation using a Dockerized Agno backend, FastMCP tool server, isolated Kali sandbox, and structured JSON outputs from 15 analysis tools.",
+      "link": "",
+      "video": "",
+      "date": "March 2026",
+      "report": "reports/0xCracker.pdf",
+      "tags": ["cybersecurity", "ai", "systems", "reverse-engineering", "ctf", "agents", "docker", "fastmcp"],
+      "featured": false
+    },
+    {
       "title": "WoahACPU",
-      "description": "WoahACPU is a process scheduling simulator developed for the Operating Systems course, visualizing how processes are selected by different scheduling algorithms. <br> Features include: Unity-based simulation built with Unity 2021.3.22f1, supporting cross-platform deployment (Android, Windows). Python backend to benchmark and serve process information, either randomly generated or loaded from Server/processes.json. ",
+      "description": "Built a process-scheduling simulator that visualizes how operating-system scheduling algorithms select and execute processes, with a Unity frontend and Python backend for benchmarked process generation.",
       "github": "https://github.com/elEsquina/WoahACPU",
       "link": "",
       "video": "https://youtube.com/embed/BzcBxdipPPo",
       "date": "May 2025",
-      "report": "reports/WoahACPU.pdf"
+      "report": "reports/WoahACPU.pdf",
+      "tags": [
+        "software",
+        "systems",
+        "simulation",
+        "python",
+        "unity"
+      ],
+      "featured": false
     },
     {
       "title": "COOL Compiler",
-      "description": "This project is a complete compiler for the Classroom Object-Oriented Language (COOL), implemented in Go. Features include: Full implementation of COOL language features like classes, inheritance, methods, and control structures. Robust lexical and syntax analysis with recursive descent and Pratt parsing. Semantic analysis for type checking and symbol table construction. LLVM IR generation with optimizations like constant propagation and dead code elimination. Support for importing modules and modular program organization. <br> Setup: Requires Go 1.23.4, LLVM toolchain, and Make. Clone the repository and run 'make all I=pathtocoolfile' to build and compile a COOL program.",
+      "description": "Built a full compiler for COOL in Go, covering lexing, parsing, semantic analysis, LLVM IR generation, and optimizations such as constant propagation and dead code elimination.",
       "github": "https://github.com/elEsquina/Go-Cool-Compiler",
       "link": "",
       "video": "",
       "date": "March 2025",
-      "report": "reports/CoolCompiler.pdf"
-    },
-    {
-      "title": "Symbolic Control for Nonlinear Systems",
-      "description": "This project implements symbolic abstraction and control for nonlinear systems.<br> Features include: Symbolic abstraction of nonlinear systems. Synthesis of controllers for safety, reachability, and other specifications. Integration with system dynamics and parameters.",
-      "github": "https://github.com/elEsquina/Symbolic-Control-For-Non-Linear-Systems",
-      "link": "",
-      "video": "",
-      "date": "December 2024",
-      "report": "reports/SymbolicControl.pdf"
+      "report": "reports/CoolCompiler.pdf",
+      "tags": [
+        "software",
+        "systems",
+        "compiler",
+        "go",
+        "llvm"
+      ],
+      "featured": false
     },
     {
       "title": "PixelLMS",
-      "description": "PixelLMS is a full-stack web-based learning management system developed as a software engineering project. It allows educators and students to manage courses, assignments, events, and discussions with role-based access. <br> Features include: Secure user authentication (SHA256/MD5 with Factory Pattern), assignment and event tracking, MVC architecture using Spring Boot (backend) and Vue.js (frontend), robust database operations with raw SQL, and agile Scrum-based development. Notable design patterns used include Factory, Strategy, and Command.",
+      "description": "Built a full-stack learning management system with role-based access, assignment and event management, and an MVC architecture using Spring Boot, Vue.js, and SQL.",
       "github": "https://github.com/m-elhamlaoui/se-project-pixelLMS",
       "link": "",
       "video": "https://youtube.com/embed/0GKMozvJSUg",
       "date": "December 2024",
-      "report": "reports/PixelLMS.pdf"
+      "report": "reports/PixelLMS.pdf",
+      "tags": [
+        "software",
+        "backend",
+        "fullstack",
+        "spring",
+        "vue",
+        "sql"
+      ],
+      "featured": false
     },
     {
-      "title": "Faceless channel AI video generator",
-      "description": "A tool that makes creating faceless social media videos easier than ever. It automatically grabs interesting posts from Reddit, turns them into natural-sounding speech, and perfectly syncs the audio with visuals. Then, it edits the video to match the slick, eye-catching style of Instagram’s 2022 trends. No complicated setups or tech skills needed—just plug in your content and get a ready-to-share video that stands out on any platform. This tool takes the hassle out of video creation so you can focus on sharing great stories.",
+      "title": "Symbolic Control for Nonlinear Systems",
+      "description": "Implemented symbolic abstraction and controller synthesis for nonlinear systems, covering safety and reachability specifications.",
+      "github": "https://github.com/elEsquina/Symbolic-Control-For-Non-Linear-Systems",
+      "link": "",
+      "video": "",
+      "date": "December 2024",
+      "report": "reports/SymbolicControl.pdf",
+      "tags": [
+        "research",
+        "control",
+        "mathematics",
+        "software"
+      ],
+      "featured": false
+    },
+    {
+      "title": "Faceless AI Video Generator",
+      "description": "Built an automation pipeline that turns online content into faceless social-media videos with generated narration, synced visuals, and export-ready output.",
       "github": "https://github.com/elEsquina/Faceless-channel-AI-video-generator",
+      "link": "",
       "video": "https://youtube.com/embed/tojrvi5qrmA",
-      "date": "August 2024"
+      "date": "August 2024",
+      "tags": [
+        "ai",
+        "automation",
+        "media"
+      ],
+      "featured": false
     },
     {
-      "title": "Online Bookstore (First Go Project + Learning Devops)",
-      "description": "This project implements a RESTful API for an online bookstore to manage books, authors, and sales reports. Features include: Authentication using UUID Bearer tokens. Book Management to add, update, retrieve, and delete books with filtering by title, author, or genre. Author Management to add, update, retrieve, and delete authors. Sales Reporting to generate daily sales reports with total revenue and top-selling books, saved as JSON files. Middlewares for token-based authentication, request logging, and context-based database access. Scalability with PostgreSQL, layered design, and graceful shutdown. Technologies Used: Go for the backend and PostgreSQL for data storage. ",
+      "title": "Online Bookstore API",
+      "description": "Built a REST API in Go for managing books, authors, and sales reports, with token-based authentication, PostgreSQL persistence, middleware, and layered architecture.",
       "github": "https://github.com/elEsquina/GoingBookingStoring",
       "link": "",
       "video": "",
-      "date": "February 2025"
+      "date": "February 2025",
+      "tags": [
+        "software",
+        "backend",
+        "api",
+        "go",
+        "postgresql"
+      ],
+      "featured": false
     },
     {
-      "title": "Hamming code error correxion using RISC V assembly",
-      "description": "In this project, I focused on developing a Hamming code algorithm using RISC-V assembly language. My goal was to implement error detection and correction techniques, specifically targeting single-bit errors in data transmission. The project involved writing assembly code to generate the Hamming code, as well as verifying and correcting errors in received data. Through this implementation, I gained a deeper understanding of low-level programming, the structure of RISC-V assembly, and how error-correcting codes function to ensure data integrity in communication systems.",
+      "title": "Hamming Code Error Correction in RISC-V",
+      "description": "Implemented Hamming-code generation, detection, and single-bit error correction in RISC-V assembly to explore low-level programming and data-integrity mechanisms.",
       "github": "https://github.com/elEsquina/Error-Correction-Hamming-Code/tree/main",
       "link": "",
       "video": "",
       "date": "May 2024",
-      "report": "reports/HammingCode.pdf"
+      "report": "reports/HammingCode.pdf",
+      "tags": [
+        "systems",
+        "embedded",
+        "riscv",
+        "assembly"
+      ],
+      "featured": false
     },
     {
       "title": "Traffic Simulation and Modeling",
-      "description": "We developed a project to address the issues that some of our metropolises, were facing. We decided to look into the fields of traffic management in view of the major issues of traffic jams, accidents on the road, and poor road design. The primary goal of this project is to use Unity to develop a robust traffic simulation platform which focuses on realistic vehicle interactions, real-world road layouts, and the application of traffic laws.",
+      "description": "Developed a Unity-based traffic simulation platform focused on realistic road layouts, vehicle interactions, and traffic-law modeling.",
       "github": "https://github.com/SafaeHaj/TrafficSimulator",
       "link": "",
       "video": "https://www.youtube.com/embed/Q5AumJFbLNg",
       "date": "November 2023",
-      "report": "reports/TrafficSim.pdf"
+      "report": "reports/TrafficSim.pdf",
+      "tags": [
+        "software",
+        "simulation",
+        "unity"
+      ],
+      "featured": false
     },
     {
       "title": "Airnest",
-      "description": "Welcome to our Flight Booking System! This platform streamlines the flight booking process, providing users with a convenient and user-friendly experience. The system includes secure transactions, comprehensive database management, and efficient installation procedures. This is a database management course final project.",
+      "description": "Built a flight-booking system with secure transactions and database-backed booking workflows.",
       "link": "",
       "video": "https://www.youtube.com/embed/TzYWaekTWJo",
       "github": "https://github.com/SafaeHaj/um6p-cs-introdb-project2-Baddou",
       "date": "November 2023",
-      "report": "reports/Airnest.pdf"
-    },
-    {
-      "title": "R2D2 Robot",
-      "description": "I have participated in the 2024th edition of the National Robotics Competition hosted annually by the EMINES E-tech club. My team and I developed within the 24-hour hackathon, an R2-D2 like robot, inspired by the Star Wars series. The robot had full rotational mobility, Bluetooth controls, ultrasound captors for obstacle detection, and a buzzer to signal close objects.",
-      "link": "",
-      "video": "https://www.youtube.com/embed/tHyjZYvIu2g",
-      "date": "March 2024"
-    },
-    {
-      "title": "Geoblox Dash",
-      "description": "Collaborated with 3D modeler @rogenus to develop an engaging game. Players collect orbs to enhance speed and trade them for in-game currency to purchase upgrades. Achieved a significant milestone of 1.7 million visits.",
-      "link": "",
-      "video": "https://www.youtube.com/embed/-_um2wpUa60",
-      "date": "August 2021"
-    },
-    {
-      "title": "Jacard recommendation system",
-      "description": "Developed a console application that simulates a Jaccard similarity-based video recommendation system. Utilized a custom dataset of videos and users to enhance algorithmic accuracy.",
-      "link": "",
-      "video": "https://www.youtube.com/embed/vw68qSZSZG4",
-      "date": "June 2023"
-    },
-    {
-      "title": "Custom Language Mapper",
-      "description": "Designed a lexer to compile 'Darija' language code into Python using a proprietary syntax. Transformed 'Darija' scripts into equivalent Python code for seamless integration.",
-      "link": "",
-      "video": "https://www.youtube.com/embed/iQ_XLGzWYoM",
-      "date": "December 2022"
-    },
-    {
-      "title": "Space disasters",
-      "description": "Designed a survival game set in space where players navigate natural disasters across various planets. Unlocked special effects and survived extreme conditions. Accumulated 1.6 million visits.",
-      "link": "",
-      "video": "https://www.youtube.com/embed/59M4kCqOgF0",
-      "date": "April 2020"
-    },
-    {
-      "title": "Food Run",
-      "description": "Co-authored a game with @rogenus focused on health and fitness. Players race to maintain a healthy physique by avoiding junk food and participating in sports activities. Surpassed 5 million visits.",
-      "link": "",
-      "video": "https://www.youtube.com/embed/qMWvduz5SdM",
-      "date": "April 2022"
-    },
-    {
-      "title": "Pillar and Moon Abilities game prototype",
-      "description": "Participated in a 4-hour coding challenge themed 'pillars and moon'. Developed specialized character abilities within the given timeframe.",
-      "link": "",
-      "video": "https://www.youtube.com/embed/jYegVJLcQXs",
-      "date": "July 2022"
-    },
-    {
-      "title": "Mini Roleplay game",
-      "description": "Created a test roleplay game that garnered 693K visits, demonstrating initial success and engagement.",
-      "link": "",
-      "video": "https://www.youtube.com/embed/CKS75-WunVU",
-      "date": "February 2021"
-    },
-    {
-      "title": "ASYNC automod",
-      "link": "",
-      "description": "Developed an interactive Discord bot featuring currency collection, weapon acquisition, and attack mechanics. Included both auto-moderation and manual moderation support, with an intuitive, reaction-based configuration menu. Reached a milestone of 12,000 servers and 100,000 users. Although it's an older and more basic project, I keep it in my portfolio because it was one of my first large-scale achievements and an important milestone at that stage in my learning journey.",
-      "video": "",
-      "date": "December 2019"
+      "report": "reports/Airnest.pdf",
+      "tags": [
+        "software",
+        "database",
+        "backend"
+      ],
+      "featured": false
     }
   ],
   "experiences": [
     {
       "title": "Blockchain Engineer Intern",
-      "company": "UM6P College Of Computing + OCP Group",
+      "company": "UM6P College of Computing + OCP Group",
       "date": "June 2025 - August 2025",
-      "description": "Developed a Blockchain-Enabled IoT ecosystem for the phosphate supply chain, supporting OCP Group's digital transformation goals. Utilized Hyperledger Fabric for secure, auditable transactions, Fabric CA for identity management, and CouchDB for JSON-based data storage. Deployed on Toubkal, Africa's most powerful supercomputer, using Apptainer for containerization and Slurm for task orchestration. Built backend with Node.js/Express.js for REST APIs and frontend with Next.js for role-based interfaces, improving transparency, traceability, and cybersecurity in Morocco's phosphate industry.",
-      "link": ""
+      "description": "Built a blockchain-enabled IoT system for supply-chain traceability using Hyperledger Fabric, Fabric CA, CouchDB, Node.js/Express, and Next.js. Deployed workloads on Toubkal using Apptainer and Slurm.",
+      "link": "",
+      "tags": [
+        "blockchain",
+        "iot",
+        "backend",
+        "hyperledger",
+        "nextjs"
+      ]
     },
     {
-      "title": "Data science Engineer",
+      "title": "Data Science Engineer",
       "company": "Upfund",
       "date": "February 2025 - May 2025",
-      "description": "Created an AI Voice Agent for Building Information on Command for Upfund, enabling real estate professionals to access building data via voice requests on WhatsApp. Built a backend system and message processing pipeline using Retrieval-Augmented Generation technic (RAG), and FastAPI. Vectorized data and stored it in DuckDB, ensuring reliable data handling with a Pydantic-based validation pipeline. Designed a modular, scalable system to deliver accurate, real-time building information.",
+      "description": "Built an AI voice agent for real-estate building information using FastAPI, RAG, DuckDB, and a Pydantic validation pipeline to deliver reliable voice-driven responses.",
       "link": "",
-      "report": "reports/DataEngineerUpfund.pdf"
+      "report": "reports/DataEngineerUpfund.pdf",
+      "tags": [
+        "ai",
+        "rag",
+        "fastapi",
+        "data",
+        "backend"
+      ],
+      "featured": true
     },
     {
       "title": "Software Engineering Intern",
-      "company": "Ministry of Agriculture, Maritime Fisheries, Rural Development, and Water and Forests, Rabat",
+      "company": "Ministry of Agriculture, Maritime Fisheries, Rural Development, and Water and Forests",
       "date": "July 2024 - August 2024",
-      "description": "Developed a platform for supervisors to manage intern projects, including task creation, event planning, and progress tracking. Implemented security measures to protect the backend using Java Spring Boot, PG Admin, and PostgreSQL DBMS.",
-      "link": ""
+      "description": "Built a platform for supervising internship projects, including task management, event planning, and progress tracking, with Spring Boot and PostgreSQL-backed services.",
+      "link": "",
+      "tags": [
+        "software",
+        "backend",
+        "spring",
+        "postgresql"
+      ]
     },
     {
-      "title": "Research Competitions",
+      "title": "Research Contributor",
       "company": "Youth Research Forum, Qatar University",
       "date": "2023 - 2024",
-      "description": "Securing LoRaWAN IoT Systems for Health Data Protection: Submitted a research paper to the 7th Youth Research Forum (YRF) 2024 (Qatar University) and the 2025 8th IEEE CiSt Congress. The paper focuses on security enhancements for LoRaWAN-based IoT infrastructures to protect sensitive health data against emerging cyber threats.<br>Critical Digital Literacy in the MENA Region: Submitted a research paper to the 6th YRF 2024 on improving stochastic reputation systems to combat fake news and enhance social media security.",
+      "description": "Contributed to research on LoRaWAN security for health-data protection and on reputation systems for combating fake news and improving social-media trust.",
       "link": "",
-      "report": "reports/HavingMyFun.pdf"
-    },
-    {
-      "title": "Forgebots UM6P Chair",
-      "company": "UM6P SOLE",
-      "date": "September  2024 - June 2026",
-      "description": "Contributed to the Forgebots UM6P Student club, focusing on advancing robotics and automation initiatives through collaborative projects, research and workshop at UM6P.",
-      "link": ""
-    },
-    {
-      "title": "ACM UM6P Chapter",
-      "company": "UM6P College Of Computing + UM6P SOLE",
-      "date": "September 2024 - June 2026",
-      "description": "Served as Vice-Chair (Sep 2024 - Jun 2025) and Cybersecurity/CTF Track Lead (Sep 2025 - Jun 2026) for the ACM UM6P Chapter. Organized events (MNPC 2023 / MCPC 2025) and led cybersecurity teams.",
-      "link": ""
+      "report": "reports/HavingMyFun.pdf",
+      "tags": [
+        "research",
+        "cybersecurity",
+        "iot"
+      ]
     }
   ],
   "certificates": [
-   {
+    {
       "title": "IBM AI Foundations",
       "issuer": "IBM + Coursera",
       "date": "2025",
@@ -298,94 +355,75 @@
   "competitions": [
     {
       "title": "UofTCTF 2025",
-      "issuer": "University of Toronto, Canada",
+      "issuer": "University of Toronto",
       "date": "Jan 9-11, 2026",
-      "description": "Internation CTF 24th worldwide - 1st in Morocco",
-      "link": "https://www.linkedin.com/posts/um6p-acm-student-chapter_acmum6p-ctf-uoftctf-activity-7416794244994068480-kp2H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Nfz8BedouWl-vShDKdKTEckNu_NtZTxo"
+      "description": "Placed 24th worldwide and 1st in Morocco.",
+      "link": "https://www.linkedin.com/posts/um6p-acm-student-chapter_acmum6p-ctf-uoftctf-activity-7416794244994068480-kp2H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Nfz8BedouWl-vShDKdKTEckNu_NtZTxo",
+      "tags": [
+        "cybersecurity",
+        "ctf",
+        "international"
+      ]
     },
     {
       "title": "ASIS CTF Finals 2025",
       "issuer": "ASIS Team",
       "date": "Dec 27–28, 2025",
-      "description": "International CTF Finals event - Ranked 1st in Morocco and Africa, 2nd in the Arab region, and 34th globally.",
-      "link": "https://www.linkedin.com/posts/um6pcc_celebrating-excellence-the-um6p-college-activity-7414702539427758080-MHRb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Nfz8BedouWl-vShDKdKTEckNu_NtZTxo"
+      "description": "Ranked 1st in Morocco and Africa, 2nd in the Arab region, and 34th globally.",
+      "link": "https://www.linkedin.com/posts/um6pcc_celebrating-excellence-the-um6p-college-activity-7414702539427758080-MHRb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9Nfz8BedouWl-vShDKdKTEckNu_NtZTxo",
+      "tags": [
+        "cybersecurity",
+        "ctf",
+        "international"
+      ]
     },
     {
       "title": "NULLHAT Morocco 2025 CTF",
-      "issuer": "Hackerone + 1337 EliteSec",
+      "issuer": "HackerOne + 1337 EliteSec",
       "date": "Oct 31–Nov 1, 2025",
-      "description": "National cybersecurity event with a high-stakes CTF - Ranked 4th in Morocco.",
-      "image": "Certificats/nullhat.jpg"
+      "description": "Ranked 4th in Morocco.",
+      "image": "Certificats/nullhat.jpg",
+      "tags": [
+        "cybersecurity",
+        "ctf",
+        "national"
+      ]
     },
     {
       "title": "Kaspersky{CTF} 2025",
       "issuer": "Kaspersky",
       "date": "Aug 30–31, 2025",
-      "description": "International CTF by Kaspersky - Ranked 38th out of 450 teams in the North African, Arabian, and Turkish region.",
-      "image": "Certificats/kaspersky.png"
+      "description": "Ranked 38th out of 450 teams in the North African, Arabian, and Turkish region.",
+      "image": "Certificats/kaspersky.png",
+      "tags": [
+        "cybersecurity",
+        "ctf",
+        "international"
+      ]
     },
     {
-      "title": "HTB International 42 The Network Meetup",
-      "issuer": "Hack The Box + 42 Germany + 1337 EliteSec",
-      "date": "May 2025",
-      "image": "Certificats/Meetup42.jpg",
-      "description": "International CTF + networking + security talks"
-    },
-    {
-      "title": "CTF - International Days of Ethical Hacking (IDEH) - CIT INPT",
+      "title": "CTF - International Days of Ethical Hacking",
       "issuer": "CIT INPT + Orange CyberDefense + IT Road",
       "date": "Jan 17–18, 2026",
-      "description": "Security conference + National CTF - Ranked 4th in Morocco",
-      "image": "Certificats/idehINPT.jpg"
+      "description": "Placed 4th in Morocco.",
+      "image": "Certificats/idehINPT.jpg",
+      "tags": [
+        "cybersecurity",
+        "ctf",
+        "national"
+      ]
     },
     {
-      "title": "Math & Maroc National Olympiad Competition",
-      "issuer": "Math & Maroc + UM6P College Of Computing",
-      "date": "2025",
-      "image": "Certificats/mmc2.jpg"
-    },
-    {
-      "title": "LDC (Local Domotics Competition) First Prize (February 2025)",
-      "issuer": "UM6P School Of Architecure & Design",
+      "title": "Local Domotics Competition — First Prize",
+      "issuer": "UM6P School of Architecture & Design",
       "date": "February 2025",
-      "description": "1st Prize • AI + IoT smart urban residence",
-      "report": "reports/SUNTOWER.pdf"
-    },
-    {
-      "title": "URC and NRC (University and National Robotics Competition) (2025)",
-      "issuer": "UM6P EMINES",
-      "date": "2025",
-      "description": "Robotics 24hours hackathon participation + Qualification to nationals",
-      "link": "",
-      "image": "Certificats/URC2025.jpg"
-    },
-    {
-      "title": "URC and NRC (University and National Robotics Competition) (2024)",
-      "issuer": "UM6P EMINES",
-      "date": "2024",
-      "description": "Robotics 24hours hackathon participation + Qualification to nationals",
-      "link": "",
-      "image": "Certificats/NRC2024.jpg"
-    },
-    {
-      "title": "Math & Maroc National Olympiad Competition",
-      "issuer": "Math & Maroc + UM6P Alkhawarizmi School of datascience, applied mathematics and modeling",
-      "date": "2023",
-      "image": "Certificats/mmc1.jpg"
-    },
-    {
-      "title": "URC and NRC (University and National Robotics Competition) (2023)",
-      "issuer": "UM6P EMINES",
-      "date": "2023",
-      "description": "Robotics 24hours hackathon participation + Qualification to nationals",
-      "image": "Certificats/URC2023.jpeg"
-    },
-    {
-      "title": "National Sailing Competitions (2022)",
-      "issuer": "Federation Royale Marocaine de Voile",
-      "date": "2022",
-      "description": "National level participation: Throne Cup, Green March Cup",
-      "image": "Certificats/voile.jpg"
+      "description": "Won 1st prize for an AI + IoT smart urban residence project.",
+      "report": "reports/SUNTOWER.pdf",
+      "tags": [
+        "iot",
+        "ai",
+        "award"
+      ]
     }
   ]
 }
