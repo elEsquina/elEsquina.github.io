@@ -47,7 +47,7 @@
       "description": "Built a process-scheduling simulator that visualizes how operating-system scheduling algorithms select and execute processes, with a Unity frontend and Python backend for benchmarked process generation.",
       "github": "https://github.com/elEsquina/WoahACPU",
       "link": "",
-      "video": "https://youtube.com/embed/BzcBxdipPPo",
+      "video": "https://youtube.com/watch?v=BzcBxdipPPo",
       "date": "May 2025",
       "report": "reports/WoahACPU.pdf",
       "tags": [
@@ -81,7 +81,7 @@
       "description": "Built a full-stack learning management system with role-based access, assignment and event management, and an MVC architecture using Spring Boot, Vue.js, and SQL.",
       "github": "https://github.com/m-elhamlaoui/se-project-pixelLMS",
       "link": "",
-      "video": "https://youtube.com/embed/0GKMozvJSUg",
+      "video": "https://youtube.com/watch?v=0GKMozvJSUg",
       "date": "December 2024",
       "report": "reports/PixelLMS.pdf",
       "tags": [
@@ -115,7 +115,7 @@
       "description": "Built an automation pipeline that turns online content into faceless social-media videos with generated narration, synced visuals, and export-ready output.",
       "github": "https://github.com/elEsquina/Faceless-channel-AI-video-generator",
       "link": "",
-      "video": "https://youtube.com/embed/tojrvi5qrmA",
+      "video": "https://youtube.com/watch?v=tojrvi5qrmA",
       "date": "August 2024",
       "tags": [
         "ai",
@@ -161,7 +161,7 @@
       "description": "Developed a Unity-based traffic simulation platform focused on realistic road layouts, vehicle interactions, and traffic-law modeling.",
       "github": "https://github.com/SafaeHaj/TrafficSimulator",
       "link": "",
-      "video": "https://www.youtube.com/embed/Q5AumJFbLNg",
+      "video": "https://www.youtube.com/watch?v=Q5AumJFbLNg",
       "date": "November 2023",
       "report": "reports/TrafficSim.pdf",
       "tags": [
@@ -175,7 +175,7 @@
       "title": "Airnest",
       "description": "Built a flight-booking system with secure transactions and database-backed booking workflows.",
       "link": "",
-      "video": "https://www.youtube.com/embed/TzYWaekTWJo",
+      "video": "https://www.youtube.com/watch?v=TzYWaekTWJo",
       "github": "https://github.com/SafaeHaj/um6p-cs-introdb-project2-Baddou",
       "date": "November 2023",
       "report": "reports/Airnest.pdf",
